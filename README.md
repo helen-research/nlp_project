@@ -14,4 +14,4 @@ We used four different types of classification models:
 1. Random Forest
 1. KNN
 
-Our models' performance varied depending on transformation and model type. Our best model was a logistic regression model using a bag of words as the features. It performed extremely well, giving 100% accuracy on the training set and 95% accuracy on the test set. 
+Our models' performance varied depending on transformation and model type. Our best model was a logistic regression model using a bag of words as the features. It performed extremely well, giving 100% accuracy on the training set and 95% accuracy on the test set. A link to our presentation can be found (here)[https://docs.google.com/presentation/d/1jaXQBI2Am7oMaRUVepHRRy0nOK8FcZPFTeu7k7rYr4Q/edit?usp=sharing]
