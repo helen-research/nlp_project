@@ -1,0 +1,3974 @@
+readme,language
+"
+Rufus: The Reliable USB Formatting Utility
+
+
+
+
+
+Features
+
+Format USB, flash card and virtual drives to FAT/FAT32/NTFS/UDF/exFAT/ReFS
+Create DOS bootable USB drives, using FreeDOS or MS-DOS (Windows 8.1 or earlier)
+Create BIOS or UEFI bootable drives, including UEFI bootable NTFS
+Create bootable drives from bootable ISOs (Windows, Linux, etc.)
+Create bootable drives from bootable disk images, including compressed ones
+Create Windows To Go drives
+Download official Microsoft Windows 8 or Windows 10 retail ISOs
+Compute MD5, SHA-1 and SHA-256 checksums of the selected image
+Twice as fast as Microsoft's USB/DVD tool or UNetbootin, on ISO -> USB creation (1)
+Perform bad blocks checks, including detection of ""fake"" flash drives
+Modern and familiar UI, with 39 languages natively supported
+Small footprint. No installation required.
+Portable
+100% Free Software (GPL v3)
+
+Compilation
+Use either Visual Studio 2017 (version 15.8 or later with SDK 10.0.17134 installed) or MinGW and
+then invoke the .sln or configure/make respectively.
+Visual Studio
+Note that, since Rufus is an OSI compliant Open Source project, you are entitled to
+download and use the freely available Visual Studio Community Edition
+to build, run or develop for Rufus. As per the Visual Studio Community Edition license
+this applies regardless of whether you are an individual or a corporate user.
+Additional information
+Rufus provides extensive information about what it is doing, either through its
+easily accessible log, or through the Windows debug facility.
+
+Official Website
+FAQ
+
+Enhancements/Bugs
+Please use the GitHub issue tracker
+for reporting problems or suggesting new features.
+(1) Tests carried out with a 16 GB USB 3.0 ADATA pen drive on a Core 2 duo/4 GB RAM platform running Windows 7 x64.
+ISO: en_windows_7_ultimate_with_sp1_x64_dvd_618240.iso
+
+
+
+Name of tool
+Version
+Time
+
+
+
+
+Windows USB/DVD Download Tool
+v1.0.30
+8 mins 10s
+
+
+UNetbootin
+v1.1.1.1
+6 mins 20s
+
+
+Rufus
+v1.1.0
+3 mins 25s
+
+
+
+
+",C
+"
+Squoosh!
+Squoosh is an image compression web app that allows you to dive into the advanced options provided
+by various image compressors.
+Privacy
+Google Analytics is used to record the following:
+
+Basic visit data.
+Before and after image size once an image is downloaded. These values are rounded to the nearest
+kilobyte.
+
+Image compression is handled locally; no additional data is sent to the server.
+Building locally
+Clone the repo, and:
+npm install
+npm run build
+You can run the development server with:
+npm start
+
+",TypeScript
+"
+nndl.github.io
+Neural Network and Deep Learning Course
+https://nndl.github.io
+
+",HTML
+"
+Natural Language Toolkit (NLTK)
+
+
+NLTK -- the Natural Language Toolkit -- is a suite of open source Python
+modules, data sets, and tutorials supporting research and development in Natural
+Language Processing.
+For documentation, please visit nltk.org.
+Contributing
+Do you want to contribute to NLTK development? Great! Please read more details
+at CONTRIBUTING.md.
+See also How to contribute to NLTK.
+Donate
+Have you found the toolkit helpful?  Please support NLTK development by donating
+to the project via PayPal, using the link on the NLTK homepage.
+Citing
+If you publish work that uses NLTK, please cite the NLTK book, as follows:
+Bird, Steven, Edward Loper and Ewan Klein (2009).
+Natural Language Processing with Python.  O'Reilly Media Inc.
+
+Copyright
+Copyright (C) 2001-2019 NLTK Project
+For license information, see LICENSE.txt.
+AUTHORS.md have a list of everyone contributed to NLTK.
+Redistributing
+
+NLTK source code is distributed under the Apache 2.0 License.
+NLTK documentation is distributed under the Creative Commons
+Attribution-Noncommercial-No Derivative Works 3.0 United States license.
+NLTK corpora are provided under the terms given in the README file for each
+corpus; all are redistributable and available for non-commercial use.
+NLTK may be freely redistributed, subject to the provisions of these licenses.
+
+
+",Python
+"
+Glide Transformations
+
+
+
+An Android transformation library providing a variety of image transformations for Glide.
+Please feel free to use this.
+Are you using Picasso or Fresco?
+Picasso Transformations
+Fresco Processors
+Demo
+Original Image
+
+Transformations
+
+How do I use it?
+Step 1
+Gradle
+repositories {
+  jcenter()
+}
+
+dependencies {
+  implementation 'jp.wasabeef:glide-transformations:4.x.x'
+  // If you want to use the GPU Filters
+  implementation 'jp.co.cyberagent.android:gpuimage:2.x.x'
+}
+Step 2
+Set Glide Transform.
+Glide.with(this).load(R.drawable.demo)
+  .apply(bitmapTransform(BlurTransformation(25, 3)))
+  .into(imageView)
+Advanced Step 3
+You can set a multiple transformations.
+val multi = MultiTransformation<Bitmap>(
+  BlurTransformation(25),
+  RoundedCornersTransformation(128, 0, CornerType.BOTTOM))))
+Glide.with(this).load(R.drawable.demo)
+  .apply(bitmapTransform(multi))
+  .into(imageView))
+Step 4
+If you are using SupportRSBlurTransformation.
+android {
+  //...
+  defaultConfig {
+  //...
+  renderscriptTargetApi YOUR_TARGET_SDK_VERSION as int
+  renderscriptSupportModeEnabled true
+  }
+}
+Transformations
+Crop
+CropTransformation, CropCircleTransformation, CropSquareTransformation,
+RoundedCornersTransformation
+Color
+ColorFilterTransformation, GrayscaleTransformation
+Blur
+BlurTransformation
+Mask
+MaskTransformation
+GPU Filter (use GPUImage)
+Will require add dependencies for GPUImage.
+ToonFilterTransformation, SepiaFilterTransformation, ContrastFilterTransformation
+InvertFilterTransformation, PixelationFilterTransformation, SketchFilterTransformation
+SwirlFilterTransformation, BrightnessFilterTransformation, KuwaharaFilterTransformation
+VignetteFilterTransformation
+Applications using Glide Transformations
+Please ping me or send a pull request if you would like to be added here.
+
+
+
+Icon
+Application
+
+
+
+
+
+Ameba Ownd
+
+
+
+AbemaTV
+
+
+
+TV Time
+
+
+
+Developed By
+Daichi Furiya (Wasabeef) - dadadada.chop@gmail.com
+
+
+
+Contributions
+Any contributions are welcome!
+Contributers
+
+start141
+
+Thanks
+
+Inspired by Picasso Transformations in TannerPerrien.
+
+License
+Copyright 2018 Wasabeef
+
+Licensed under the Apache License, Version 2.0 (the ""License"");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an ""AS IS"" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+
+",Java
+"
+
+Cheesesquare Sample
+Demos the new Android Design library. This is not an exhaustive sample, but shows
+some of the important features in the Design library:
+
+Collapsing Toolbar
+FloatingActionButton
+View anchoring
+NavigationView
+Snackbar
+
+Pre-requisites
+
+Android SDK v22
+Android Build Tools v22.0.1
+Android Support Repository r16 (for v22.2.1)
+
+License
+Copyright 2014 The Android Open Source Project, Inc.
+Licensed to the Apache Software Foundation (ASF) under one or more contributor
+license agreements.  See the NOTICE file distributed with this work for
+additional information regarding copyright ownership.  The ASF licenses this
+file to you under the Apache License, Version 2.0 (the ""License""); you may not
+use this file except in compliance with the License.  You may obtain a copy of
+the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
+License for the specific language governing permissions and limitations under
+the License.
+
+",Java
+"
+
+
+Helping you select an MV* framework
+
+Website    Blog    TasteJS
+
+
+Developers these days are spoiled with choice when it comes to selecting an MV* framework for structuring and organizing JavaScript web apps.
+Backbone, Ember, AngularJS... the list of new and stable solutions goes on and on, but just how do you decide on which to use in a sea of so many options?
+To help solve this problem, we created TodoMVC - a project which offers the same Todo application implemented using MV* concepts in most of the popular JavaScript MV* frameworks of today.
+Team
+TodoMVC would not be possible without a strong team of contributors helping push the project forward each day. Additionally, we have a core project team composed of:
+Addy Osmani - Founder/Lead
+
+  Addy is a Software Engineer at Google who originally created TodoMVC. He oversees the project direction, maintenance and organizes the planning and development efforts of the team.
+Sindre Sorhus - Lead Developer
+
+Sindre is a Web Developer who leads core development, quality control and application design for the project. His engineering contributions have helped us ensure consistency and best practices are enforced wherever possible. Sindre also leads up development of the TodoMVC application spec.
+Pascal Hartig - Developer
+
+Pascal is a Software Engineer at Twitter with a deep passion for consistency. He watches pull requests and helps developers getting their contributions integrated with TodoMVC.
+Stephen Sawchuk - Developer
+
+Stephen is a Front-end Engineer at Quicken Loans that cares about improving the maintainability and developer experience of open-source projects. His recent contributions include helping us move all apps over to using Bower and implementing the new information bar.
+Colin Eberhardt - Developer
+
+Colin is a software consultant at Scott Logic who is passionate about all software - from JavaScript to Java, and C# to Objective-C. His recent contribution to the project has been a fully automated test suite.
+Sam Saccone - Developer
+
+Sam is a Software Engineer at Google who is driven by an endless desire to create, solve problems, and improve developers' lives.
+Arthur Verschaeve - Developer
+
+Arthur is an open-source fanboy from Belgium. He is passionate about developer tooling and all things JavaScript.
+Fady Samir Sadek - Developer
+
+Fady is a front-end developer who loves all things JavaScript and enjoys solving real world problems using the web platform and helping other developers do the same. He currently leads maintenance of the project and ensures that the project is friendly for new contributors and upcoming developers.
+Gianni Chiappetta - Logo designer
+
+Gianni is a programmer and designer currently working as the Chief Rigger at MetaLab.
+Disclaimer
+
+TodoMVC has been called many things including the 'Speed-dating' and 'Rosetta Stone' of MV* frameworks. Whilst we hope that this project can offer assistance in deciding what frameworks are worth spending more time looking at, remember that the Todo application offers a limited view of a framework's potential capability.
+It is meant to be used as a gateway to reviewing how a basic application using a framework may be structured, and we heavily recommend investing time researching a solution in more depth before opting to use it.
+Also, please keep in mind that TodoMVC is not the perfect way to compare the size of different frameworks. We intentionally use the unminified versions to make reading the source code easier.
+Getting Involved
+Whilst we enjoy implementing and improving existing Todo apps, we're always interested in speaking to framework authors (and users) wishing to share Todo app implementations in their framework/solution of choice.
+Check out our contribution docs for more info.
+License
+Everything in this repo is MIT License unless otherwise specified.
+MIT © Addy Osmani, Sindre Sorhus, Pascal Hartig, Stephen Sawchuk.
+
+",JavaScript
+"
+Awesome Python 
+A curated list of awesome Python frameworks, libraries, software and resources.
+Inspired by awesome-php.
+
+Awesome Python
+
+Admin Panels
+Algorithms and Design Patterns
+Audio
+Authentication
+Build Tools
+Built-in Classes Enhancement
+Caching
+ChatOps Tools
+CMS
+Code Analysis
+Command-line Tools
+Compatibility
+Computer Vision
+Concurrency and Parallelism
+Configuration
+Cryptography
+Data Analysis
+Data Validation
+Data Visualization
+Database Drivers
+Database
+Date and Time
+Debugging Tools
+Deep Learning
+DevOps Tools
+Distributed Computing
+Distribution
+Documentation
+Downloader
+E-commerce
+Editor Plugins and IDEs
+Email
+Environment Management
+Files
+Foreign Function Interface
+Forms
+Functional Programming
+Game Development
+Geolocation
+GUI
+Hardware
+HTML Manipulation
+HTTP
+Image Processing
+Implementations
+Interactive Interpreter
+Internationalization
+Job Scheduler
+Logging
+Machine Learning
+Miscellaneous
+Natural Language Processing
+Network Virtualization
+Networking
+News Feed
+ORM
+Package Management
+Package Repositories
+Permissions
+Processes
+Queue
+Recommender Systems
+RESTful API
+Robotics
+RPC Servers
+Science
+Search
+Serialization
+Serverless Frameworks
+Specific Formats Processing
+Static Site Generator
+Tagging
+Template Engine
+Testing
+Text Processing
+Third-party APIs
+URL Manipulation
+Video
+Web Asset Management
+Web Content Extracting
+Web Crawling & Web Scraping
+Web Frameworks
+WebSocket
+WSGI Servers
+
+
+Services
+
+Code Quality
+Continuous Integration
+
+
+Resources
+
+Podcasts
+Twitter
+Websites
+Weekly
+
+
+Other Awesome Lists
+Contributing
+
+
+Admin Panels
+Libraries for administrative interfaces.
+
+ajenti - The admin panel your servers deserve.
+django-grappelli - A jazzy skin for the Django Admin-Interface.
+django-suit - Alternative Django Admin-Interface (free only for Non-commercial use).
+django-xadmin - Drop-in replacement of Django admin comes with lots of goodies.
+flask-admin - Simple and extensible administrative interface framework for Flask.
+flower - Real-time monitor and web admin for Celery.
+wooey - A Django app which creates automatic web UIs for Python scripts.
+
+Algorithms and Design Patterns
+Python implementation of algorithms and design patterns.
+
+algorithms - Minimal examples of data structures and algorithms in Python.
+PyPattyrn - A simple yet effective library for implementing common design patterns.
+python-patterns - A collection of design patterns in Python.
+sortedcontainers - Fast, pure-Python implementation of SortedList, SortedDict, and SortedSet types.
+
+Audio
+Libraries for manipulating audio and its metadata.
+
+Audio
+
+audioread - Cross-library (GStreamer + Core Audio + MAD + FFmpeg) audio decoding.
+dejavu - Audio fingerprinting and recognition.
+mingus - An advanced music theory and notation package with MIDI file and playback support.
+pyAudioAnalysis - Python Audio Analysis Library: Feature Extraction, Classification, Segmentation and Applications
+pydub - Manipulate audio with a simple and easy high level interface.
+TimeSide - Open web audio processing framework.
+
+
+Metadata
+
+beets - A music library manager and MusicBrainz tagger.
+eyeD3 - A tool for working with audio files, specifically MP3 files containing ID3 metadata.
+mutagen - A Python module to handle audio metadata.
+tinytag - A library for reading music meta data of MP3, OGG, FLAC and Wave files.
+
+
+
+Authentication
+Libraries for implementing authentications schemes.
+
+OAuth
+
+authlib - JavaScript Object Signing and Encryption draft implementation.
+django-allauth - Authentication app for Django that ""just works.""
+django-oauth-toolkit - OAuth 2 goodies for Django.
+oauthlib - A generic and thorough implementation of the OAuth request-signing logic.
+python-oauth2 - A fully tested, abstract interface to creating OAuth clients and servers.
+python-social-auth - An easy-to-setup social authentication mechanism.
+
+
+JWT
+
+pyjwt - JSON Web Token implementation in Python.
+python-jose - A JOSE implementation in Python.
+python-jwt - A module for generating and verifying JSON Web Tokens.
+
+
+
+Build Tools
+Compile software from source code.
+
+BitBake - A make-like build tool for embedded Linux.
+buildout - A build system for creating, assembling and deploying applications from multiple parts.
+PlatformIO - A console tool to build code with different development platforms.
+pybuilder - A continuous build tool written in pure Python.
+SCons - A software construction tool.
+
+Built-in Classes Enhancement
+Libraries for enhancing Python built-in classes.
+
+dataclasses - (Python standard library) Data classes.
+attrs - Replacement for __init__, __eq__, __repr__, etc. boilerplate in class definitions.
+bidict - Efficient, Pythonic bidirectional map data structures and related functionality..
+Box - Python dictionaries with advanced dot notation access.
+DottedDict - A library that provides a method of accessing lists and dicts with a dotted path notation.
+
+CMS
+Content Management Systems.
+
+wagtail - A Django content management system.
+django-cms - An Open source enterprise CMS based on the Django.
+feincms - One of the most advanced Content Management Systems built on Django.
+Kotti - A high-level, Pythonic web application framework built on Pyramid.
+mezzanine - A powerful, consistent, and flexible content management platform.
+plone - A CMS built on top of the open source application server Zope.
+quokka - Flexible, extensible, small CMS powered by Flask and MongoDB.
+
+Caching
+Libraries for caching data.
+
+beaker - A WSGI middleware for sessions and caching.
+django-cache-machine - Automatic caching and invalidation for Django models.
+django-cacheops - A slick ORM cache with automatic granular event-driven invalidation.
+dogpile.cache - dogpile.cache is next generation replacement for Beaker made by same authors.
+HermesCache - Python caching library with tag-based invalidation and dogpile effect prevention.
+pylibmc - A Python wrapper around the libmemcached interface.
+python-diskcache - SQLite and file backed cache backend with faster lookups than memcached and redis.
+
+ChatOps Tools
+Libraries for chatbot development.
+
+errbot - The easiest and most popular chatbot to implement ChatOps.
+
+Code Analysis
+Tools of static analysis, linters and code quality checkers. See: awesome-static-analysis.
+
+Code Analysis
+
+coala - Language independent and easily extendable code analysis application.
+code2flow - Turn your Python and JavaScript code into DOT flowcharts.
+prospector - A tool to analyse Python code.
+pycallgraph - A library that visualises the flow (call graph) of your Python application.
+
+
+Code Linters
+
+flake8 - A wrapper around pycodestyle, pyflakes and McCabe.
+pylint - A fully customizable source code analyzer.
+pylama - A code audit tool for Python and JavaScript.
+Code Formatters
+black - The uncompromising Python code formatter.
+yapf - Yet another Python code formatter from Google.
+
+
+Static Type Checkers
+
+mypy - Check variable types during compile time.
+pyre-check - Performant type checking.
+
+
+Static Type Annotations Generators
+
+MonkeyType - A system for Python that generates static type annotations by collecting runtime types
+
+
+
+Command-line Tools
+Libraries for building command-line application.
+
+Command-line Application Development
+
+cement - CLI Application Framework for Python.
+click - A package for creating beautiful command line interfaces in a composable way.
+cliff - A framework for creating command-line programs with multi-level commands.
+clint - Python Command-line Application Tools.
+docopt - Pythonic command line arguments parser.
+python-fire - A library for creating command line interfaces from absolutely any Python object.
+python-prompt-toolkit - A library for building powerful interactive command lines.
+
+
+Terminal Rendering
+
+asciimatics - A package to create full-screen text UIs (from interactive forms to ASCII animations).
+bashplotlib - Making basic plots in the terminal.
+colorama - Cross-platform colored terminal text.
+
+
+Productivity Tools
+
+cookiecutter - A command-line utility that creates projects from cookiecutters (project templates).
+doitlive - A tool for live presentations in the terminal.
+howdoi - Instant coding answers via the command line.
+PathPicker - Select files out of bash output.
+percol - Adds flavor of interactive selection to the traditional pipe concept on UNIX.
+thefuck - Correcting your previous console command.
+tmuxp - A tmux session manager.
+try - A dead simple CLI to try out python packages - it's never been easier.
+
+
+CLI Enhancements
+
+httpie - A command line HTTP client, a user-friendly cURL replacement.
+kube-shell - An integrated shell for working with the Kubernetes CLI.
+mycli - A Terminal Client for MySQL with AutoCompletion and Syntax Highlighting.
+pgcli - Postgres CLI with autocompletion and syntax highlighting.
+saws - A Supercharged aws-cli.
+
+
+
+Compatibility
+Libraries for migrating from Python 2 to 3.
+
+python-future - The missing compatibility layer between Python 2 and Python 3.
+python-modernize - Modernizes Python code for eventual Python 3 migration.
+six - Python 2 and 3 compatibility utilities.
+
+Computer Vision
+Libraries for computer vision.
+
+OpenCV - Open Source Computer Vision Library.
+pytesseract - Another wrapper for Google Tesseract OCR.
+SimpleCV - An open source framework for building computer vision applications.
+
+Concurrency and Parallelism
+Libraries for concurrent and parallel execution. See awesome-asyncio.
+
+concurrent.futures - (Python standard library) A high-level interface for asynchronously executing callables.
+multiprocessing - (Python standard library) Process-based parallelism.
+eventlet - Asynchronous framework with WSGI support.
+gevent - A coroutine-based Python networking library that uses greenlet.
+uvloop - Ultra fast implementation of asyncio event loop on top of libuv.
+scoop - Scalable Concurrent Operations in Python.
+
+Configuration
+Libraries for storing and parsing configuration options.
+
+configobj - INI file parser with validation.
+configparser - (Python standard library) INI file parser.
+profig - Config from multiple formats with value conversion.
+python-decouple - Strict separation of settings from code.
+
+Cryptography
+
+cryptography - A package designed to expose cryptographic primitives and recipes to Python developers.
+paramiko - A Python (2.6+, 3.3+) implementation of the SSHv2 protocol, providing both client and server functionality.
+passlib - Secure password storage/hashing library, very high level.
+pynacl - Python binding to the Networking and Cryptography (NaCl) library.
+
+Data Analysis
+Libraries for data analyzing.
+
+Blaze - NumPy and Pandas interface to Big Data.
+Open Mining - Business Intelligence (BI) in Pandas interface.
+Orange - Data mining, data visualization, analysis and machine learning through visual programming or scripts.
+Pandas - A library providing high-performance, easy-to-use data structures and data analysis tools.
+Optimus - Cleansing, pre-processing, feature engineering, exploratory data analysis and easy Machine Learning with a PySpark backend.
+
+Data Validation
+Libraries for validating data. Used for forms in many cases.
+
+Cerberus - A lightweight and extensible data validation library.
+colander - Validating and deserializing data obtained via XML, JSON, an HTML form post.
+Dash - Built on top of Flask, React and Plotly aimed at analytical web applications.
+
+awesome-dash
+
+
+jsonschema - An implementation of JSON Schema for Python.
+schema - A library for validating Python data structures.
+Schematics - Data Structure Validation.
+valideer - Lightweight extensible data validation and adaptation library.
+voluptuous - A Python data validation library.
+
+Data Visualization
+Libraries for visualizing data. See: awesome-javascript.
+
+Altair - Declarative statistical visualization library for Python.
+Bokeh - Interactive Web Plotting for Python.
+bqplot - Interactive Plotting Library for the Jupyter Notebook
+ggplot - Same API as ggplot2 for R.
+Matplotlib - A Python 2D plotting library.
+Pygal - A Python SVG Charts Creator.
+PyGraphviz - Python interface to Graphviz.
+PyQtGraph - Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.
+Seaborn - Statistical data visualization using Matplotlib.
+VisPy - High-performance scientific visualization based on OpenGL.
+
+Database
+Databases implemented in Python.
+
+pickleDB - A simple and lightweight key-value store for Python.
+tinydb - A tiny, document-oriented database.
+ZODB - A native object database for Python. A key-value and object graph database.
+
+Database Drivers
+Libraries for connecting and operating databases.
+
+MySQL - awesome-mysql
+
+mysqlclient - MySQL connector with Python 3 support (mysql-python fork).
+PyMySQL - A pure Python MySQL driver compatible to mysql-python.
+
+
+PostgreSQL - awesome-postgres
+
+psycopg2 - The most popular PostgreSQL adapter for Python.
+queries - A wrapper of the psycopg2 library for interacting with PostgreSQL.
+
+
+Other Relational Databases
+
+pymssql - A simple database interface to Microsoft SQL Server.
+
+
+NoSQL Databases
+
+cassandra-driver - The Python Driver for Apache Cassandra.
+happybase - A developer-friendly library for Apache HBase.
+kafka-python - The Python client for Apache Kafka.
+py2neo - Python wrapper client for Neo4j's restful interface.
+pymongo - The official Python client for MongoDB.
+redis-py - The Python client for Redis.
+
+
+Asynchronous Clients
+
+motor - The async Python driver for MongoDB.
+Telephus - Twisted based client for Cassandra.
+txpostgres - Twisted based asynchronous driver for PostgreSQL.
+txRedis - Twisted based client for Redis.
+
+
+
+Date and Time
+Libraries for working with dates and times.
+
+Chronyk - A Python 3 library for parsing human-written times and dates.
+dateutil - Extensions to the standard Python datetime module.
+delorean - A library for clearing up the inconvenient truths that arise dealing with datetimes.
+moment - A Python library for dealing with dates/times. Inspired by Moment.js.
+Pendulum - Python datetimes made easy.
+PyTime - A easy-use Python module which aims to operate date/time/datetime by string.
+pytz - World timezone definitions, modern and historical. Brings the tz database into Python.
+when.py - Providing user-friendly functions to help perform common date and time actions.
+maya - Datetimes for Humans, Maya is mostly built around the headaches and use-cases around parsing datetime data from websites.
+
+Debugging Tools
+Libraries for debugging code.
+
+pdb-like Debugger
+
+ipdb - IPython-enabled pdb.
+pdb++ - Another drop-in replacement for pdb.
+pudb - A full-screen, console-based Python debugger.
+wdb - An improbable web debugger through WebSockets.
+
+
+Tracing
+
+lptrace - strace for Python programs.
+manhole - Debug service that will accept unix domain socket connections and present the stacktraces for all threads and an interactive prompt.
+pyringe - Debugger capable of attaching to and injecting code into Python processes.
+python-hunter - A flexible code tracing toolkit.
+
+
+Profiler
+
+line_profiler - Line-by-line profiling.
+memory_profiler - Monitor Memory usage of Python code.
+profiling - An interactive Python profiler.
+py-spy - A sampling profiler for Python programs. Written in Rust.
+pyflame - A ptracing profiler For Python.
+vprof - Visual Python profiler.
+
+
+Others
+
+icecream - Inspect variables, expressions, and program execution with a single, simple function call.
+django-debug-toolbar - Display various debug information for Django.
+django-devserver - A drop-in replacement for Django's runserver.
+flask-debugtoolbar - A port of the django-debug-toolbar to flask.
+pyelftools - Parsing and analyzing ELF files and DWARF debugging information.
+
+
+
+Deep Learning
+Frameworks for Neural Networks and Deep Learning. See: awesome-deep-learning.
+
+caffe - A fast open framework for deep learning..
+keras - A high-level neural networks library and capable of running on top of either TensorFlow or Theano.
+mxnet - A deep learning framework designed for both efficiency and flexibility.
+pytorch - Tensors and Dynamic neural networks in Python with strong GPU acceleration.
+SerpentAI - Game agent framework. Use any video game as a deep learning sandbox.
+tensorflow - The most popular Deep Learning framework created by Google.
+Theano - A library for fast numerical computation.
+
+DevOps Tools
+Software and libraries for DevOps.
+
+ansible - A radically simple IT automation platform.
+cloudinit - A multi-distribution package that handles early initialization of a cloud instance.
+cuisine - Chef-like functionality for Fabric.
+docker-compose - Fast, isolated development environments using Docker.
+fabric - A simple, Pythonic tool for remote execution and deployment.
+fabtools - Tools for writing awesome Fabric files.
+honcho - A Python clone of Foreman, for managing Procfile-based applications.
+OpenStack - Open source software for building private and public clouds.
+pexpect - Controlling interactive programs in a pseudo-terminal like GNU expect.
+psutil - A cross-platform process and system utilities module.
+saltstack - Infrastructure automation and management system.
+supervisor - Supervisor process control system for UNIX.
+
+Distributed Computing
+Frameworks and libraries for Distributed Computing.
+
+Batch Processing
+
+PySpark - Apache Spark Python API.
+dask - A flexible parallel computing library for analytic computing.
+luigi - A module that helps you build complex pipelines of batch jobs.
+mrjob - Run MapReduce jobs on Hadoop or Amazon Web Services.
+Ray - A system for parallel and distributed Python that unifies the machine learning ecosystem.
+
+
+Stream Processing
+
+faust - A stream processing library, porting the ideas from Kafka Streams to Python.
+streamparse - Run Python code against real-time streams of data via Apache Storm.
+
+
+
+Distribution
+Libraries to create packaged executables for release distribution.
+
+dh-virtualenv - Build and distribute a virtualenv as a Debian package.
+Nuitka - Compile scripts, modules, packages to an executable or extension module.
+py2app - Freezes Python scripts (Mac OS X).
+py2exe - Freezes Python scripts (Windows).
+PyInstaller - Converts Python programs into stand-alone executables (cross-platform).
+pynsist - A tool to build Windows installers, installers bundle Python itself.
+
+Documentation
+Libraries for generating project documentation.
+
+sphinx - Python Documentation generator.
+
+awesome-sphinxdoc
+
+
+pdoc - Epydoc replacement to auto generate API documentation for Python libraries.
+pycco - The literate-programming-style documentation generator.
+
+Downloader
+Libraries for downloading.
+
+s3cmd - A command line tool for managing Amazon S3 and CloudFront.
+s4cmd - Super S3 command line tool, good for higher performance.
+you-get - A YouTube/Youku/Niconico video downloader written in Python 3.
+youtube-dl - A small command-line program to download videos from YouTube.
+
+E-commerce
+Frameworks and libraries for e-commerce and payments.
+
+alipay - Unofficial Alipay API for Python.
+Cartridge - A shopping cart app built using the Mezzanine.
+django-oscar - An open-source e-commerce framework for Django.
+django-shop - A Django based shop system.
+merchant - A Django app to accept payments from various payment processors.
+money - Money class with optional CLDR-backed locale-aware formatting and an extensible currency exchange solution.
+python-currencies - Display money format and its filthy currencies.
+forex-python - Foreign exchange rates, Bitcoin price index and currency conversion.
+saleor - An e-commerce storefront for Django.
+shoop - An open source E-Commerce platform based on Django.
+
+Editor Plugins and IDEs
+
+Emacs
+
+elpy - Emacs Python Development Environment.
+
+
+Sublime Text
+
+anaconda - Anaconda turns your Sublime Text 3 in a full featured Python development IDE.
+SublimeJEDI - A Sublime Text plugin to the awesome auto-complete library Jedi.
+
+
+Vim
+
+jedi-vim - Vim bindings for the Jedi auto-completion library for Python.
+python-mode - An all in one plugin for turning Vim into a Python IDE.
+YouCompleteMe - Includes Jedi-based completion engine for Python.
+
+
+Visual Studio
+
+PTVS - Python Tools for Visual Studio.
+
+
+Visual Studio Code
+
+Python - An extension with rich support for the Python language, with features including linting, IntelliSense, formatting, refactoring, debugging, unit tests, and jupyter support.
+
+
+IDE
+
+PyCharm - Commercial Python IDE by JetBrains. Has free community edition available.
+spyder - Open Source Python IDE.
+
+
+
+Email
+Libraries for sending and parsing email.
+
+envelopes - Mailing for human beings.
+flanker - A email address and Mime parsing library.
+imbox - Python IMAP for Humans.
+inbox.py - Python SMTP Server for Humans.
+lamson - Pythonic SMTP Application Server.
+Marrow Mailer - High-performance extensible mail delivery framework.
+modoboa - A mail hosting and management platform including a modern and simplified Web UI.
+Nylas Sync Engine - Providing a RESTful API on top of a powerful email sync platform.
+yagmail - Yet another Gmail/SMTP client.
+
+Environment Management
+Libraries for Python version and environment management.
+
+pipenv - Sacred Marriage of Pipfile, Pip, & Virtualenv.
+poetry - Python dependency management and packaging made easy.
+pyenv - Simple Python version management.
+venv - (Python standard library in Python 3.3+) Creating lightweight virtual environments.
+virtualenv - A tool to create isolated Python environments.
+
+Files
+Libraries for file manipulation and MIME type detection.
+
+mimetypes - (Python standard library) Map filenames to MIME types.
+path.py - A module wrapper for os.path.
+pathlib - (Python standard library) An cross-platform, object-oriented path library.
+PyFilesystem2 - Python's filesystem abstraction layer.
+python-magic - A Python interface to the libmagic file type identification library.
+Unipath - An object-oriented approach to file/directory operations.
+watchdog - API and shell utilities to monitor file system events.
+
+Foreign Function Interface
+Libraries for providing foreign function interface.
+
+cffi - Foreign Function Interface for Python calling C code.
+ctypes - (Python standard library) Foreign Function Interface for Python calling C code.
+PyCUDA - A Python wrapper for Nvidia's CUDA API.
+SWIG - Simplified Wrapper and Interface Generator.
+
+Forms
+Libraries for working with forms.
+
+Deform - Python HTML form generation library influenced by the formish form generation library.
+django-bootstrap3 - Bootstrap 3 integration with Django.
+django-bootstrap4 - Bootstrap 4 integration with Django.
+django-crispy-forms - A Django app which lets you create beautiful forms in a very elegant and DRY way.
+django-remote-forms - A platform independent Django form serializer.
+WTForms - A flexible forms validation and rendering library.
+
+Functional Programming
+Functional Programming with Python.
+
+Coconut - Coconut is a variant of Python built for simple, elegant, Pythonic functional programming.
+CyToolz - Cython implementation of Toolz: High performance functional utilities.
+fn.py - Functional programming in Python: implementation of missing features to enjoy FP.
+funcy - A fancy and practical functional tools.
+Toolz - A collection of functional utilities for iterators, functions, and dictionaries.
+
+GUI
+Libraries for working with graphical user interface applications.
+
+curses - Built-in wrapper for ncurses used to create terminal GUI applications.
+Eel - Little library for making simple Electron-like offline HTML/JS GUI apps, with full access to Python capabilities and libraries.
+enaml - Creating beautiful user-interfaces with Declaratic Syntax like QML.
+Flexx - Flexx is a pure Python toolkit for creating GUI's, that uses web technology for its rendering.
+Gooey - Turn command line programs into a full GUI application with one line.
+kivy - A library for creating NUI applications, running on Windows, Linux, Mac OS X, Android and iOS.
+pyglet - A cross-platform windowing and multimedia library for Python.
+PyGObject - Python Bindings for GLib/GObject/GIO/GTK+ (GTK+3).
+PyQt - Python bindings for the Qt cross-platform application and UI framework, with support for both Qt v4 and Qt v5 frameworks.
+PySide - Python bindings for the Qt cross-platform application and UI framework, supporting the Qt v4 framework.
+PySimpleGUI - Wrapper for tkinter, Qt, WxPython and Remi that creates a unified, easy to understand & more Python-like interface for beginner and intermediate level custom GUIs.
+pywebview - A lightweight cross-platform native wrapper around a webview component that allows to display HTML content in its own native dedicated window.
+Tkinter - Tkinter is Python's de-facto standard GUI package.
+Toga - A Python native, OS native GUI toolkit.
+urwid - A library for creating terminal GUI applications with strong support for widgets, events, rich colors, etc.
+wxPython - A blending of the wxWidgets C++ class library with the Python.
+
+Game Development
+Awesome game development libraries.
+
+Cocos2d - cocos2d is a framework for building 2D games, demos, and other graphical/interactive applications. It is based on pyglet.
+Harfang3D - Python framework for 3D, VR and game development. Manage and display complex 3D scenes, with physics, video, sound and music, access VR devices. All written in C++.
+Panda3D - 3D game engine developed by Disney and maintained by Carnegie Mellon's Entertainment Technology Center. Written in C++, completely wrapped in Python.
+Pygame - Pygame is a set of Python modules designed for writing games.
+PyOgre - Python bindings for the Ogre 3D render engine, can be used for games, simulations, anything 3D.
+PyOpenGL - Python ctypes bindings for OpenGL and it's related APIs.
+PySDL2 - A ctypes based wrapper for the SDL2 library.
+RenPy - A Visual Novel engine.
+
+Geolocation
+Libraries for geocoding addresses and working with latitudes and longitudes.
+
+django-countries - A Django app that provides country choices for use with forms, flag icons static files, and a country field for models.
+GeoDjango - A world-class geographic web framework.
+GeoIP - Python API for MaxMind GeoIP Legacy Database.
+geojson - Python bindings and utilities for GeoJSON.
+geopy - Python Geocoding Toolbox.
+pygeoip - Pure Python GeoIP API.
+
+HTML Manipulation
+Libraries for working with HTML and XML.
+
+BeautifulSoup - Providing Pythonic idioms for iterating, searching, and modifying HTML or XML.
+bleach - A whitelist-based HTML sanitization and text linkification library.
+cssutils - A CSS library for Python.
+html5lib - A standards-compliant library for parsing and serializing HTML documents and fragments.
+lxml - A very fast, easy-to-use and versatile library for handling HTML and XML.
+MarkupSafe - Implements a XML/HTML/XHTML Markup safe string for Python.
+pyquery - A jQuery-like library for parsing HTML.
+untangle - Converts XML documents to Python objects for easy access.
+WeasyPrint - A visual rendering engine for HTML and CSS that can export to PDF.
+xmldataset - Simple XML Parsing.
+xmltodict - Working with XML feel like you are working with JSON.
+
+HTTP
+Libraries for working with HTTP.
+
+grequests - requests + gevent for asynchronous HTTP requests.
+httplib2 - Comprehensive HTTP client library.
+requests - HTTP Requests for Humans™.
+treq - Python requests like API built on top of Twisted's HTTP client.
+urllib3 - A HTTP library with thread-safe connection pooling, file post support, sanity friendly.
+
+Hardware
+Libraries for programming with hardware.
+
+ino - Command line toolkit for working with Arduino.
+keyboard - Hook and simulate global keyboard events on Windows and Linux.
+mouse - Hook and simulate global mouse events on Windows and Linux.
+Pingo - Pingo provides a uniform API to program devices like the Raspberry Pi, pcDuino, Intel Galileo, etc.
+PyUserInput - A module for cross-platform control of the mouse and keyboard.
+scapy - A brilliant packet manipulation library.
+wifi - A Python library and command line tool for working with WiFi on Linux.
+
+Image Processing
+Libraries for manipulating images.
+
+hmap - Image histogram remapping.
+imgSeek - A project for searching a collection of images using visual similarity.
+nude.py - Nudity detection.
+pagan - Retro identicon (Avatar) generation based on input string and hash.
+pillow - Pillow is the friendly PIL fork.
+pyBarcode - Create barcodes in Python without needing PIL.
+pygram - Instagram-like image filters.
+python-qrcode - A pure Python QR Code generator.
+Quads - Computer art based on quadtrees.
+scikit-image - A Python library for (scientific) image processing.
+thumbor - A smart imaging service. It enables on-demand crop, re-sizing and flipping of images.
+wand - Python bindings for MagickWand, C API for ImageMagick.
+
+Implementations
+Implementations of Python.
+
+CLPython - Implementation of the Python programming language written in Common Lisp.
+CPython - Default, most widely used implementation of the Python programming language written in C.
+Cython - Optimizing Static Compiler for Python. Uses type mixins to compile Python into C or C++ modules resulting in large performance gains
+Grumpy - More compiler than interpreter as more powerful CPython2.7 replacement (alpha).
+IronPython - Implementation of the Python programming language written in C# targeting the .NET Framework and Mono.
+Jython - Implementation of Python programming language written in Java for the Java virtual machine (JVM).
+MicroPython - MicroPython - a lean and efficient Python programming language implementation for microcontrollers and constrained systems
+Numba - Python JIT compiler to LLVM aimed at scientific Python.
+PeachPy - x86-64 assembler embedded in Python. Can be used as inline assembler for Python or as a stand-alone assembler for Windows, Linux, OS X, Native Client and Go.
+Pyjion - A JIT for Python based upon CoreCLR.
+PyPy - Implementation of the Python programming language written in RPython and translated into C. PyPy focuses on speed, efficiency and compatibility with the original CPython interpreter. The interpreter uses black magic to make Python very fast without having to add in additional type information.
+PySec - Hardened version of python that makes it easier for security professionals and developers to write applications more resilient to attacks and manipulations.
+Pyston - A Python implementation built using LLVM and modern JIT techniques with the goal of achieving good performance.
+Stackless Python - An enhanced version of the Python programming language which allows programmers to reap the benefits of thread-based programming without the performance and complexity problems associated with conventional threads.
+
+Interactive Interpreter
+Interactive Python interpreters (REPL).
+
+bpython - A fancy interface to the Python interpreter.
+Jupyter Notebook (IPython) - A rich toolkit to help you make the most out of using Python interactively.
+
+awesome-jupyter
+
+
+ptpython - Advanced Python REPL built on top of the python-prompt-toolkit.
+
+Internationalization
+Libraries for working with i18n.
+
+Babel - An internationalization library for Python.
+PyICU - A wrapper of International Components for Unicode C++ library (ICU).
+
+Job Scheduler
+Libraries for scheduling jobs.
+
+APScheduler - A light but powerful in-process task scheduler that lets you schedule functions.
+django-schedule - A calendaring app for Django.
+doit - A task runner and build tool.
+gunnery - Multipurpose task execution tool for distributed systems with web-based interface.
+Joblib - A set of tools to provide lightweight pipelining in Python.
+Plan - Writing crontab file in Python like a charm.
+schedule - Python job scheduling for humans.
+Spiff - A powerful workflow engine implemented in pure Python.
+TaskFlow - A Python library that helps to make task execution easy, consistent and reliable.
+Airflow - Airflow is a platform to programmatically author, schedule and monitor workflows.
+
+Logging
+Libraries for generating and working with logs.
+
+Eliot - Logging for complex & distributed systems.
+logbook - Logging replacement for Python.
+logging - (Python standard library) Logging facility for Python.
+raven - Python client for Sentry, a log/error tracking, crash reporting and aggregation platform for web applications.
+
+Machine Learning
+Libraries for Machine Learning. See: awesome-machine-learning.
+
+H2O - Open Source Fast Scalable Machine Learning Platform.
+Metrics - Machine learning evaluation metrics.
+NuPIC - Numenta Platform for Intelligent Computing.
+scikit-learn - The most popular Python library for Machine Learning.
+Spark ML - Apache Spark's scalable Machine Learning library.
+vowpal_porpoise - A lightweight Python wrapper for Vowpal Wabbit.
+xgboost - A scalable, portable, and distributed gradient boosting library.
+
+Microsoft Windows
+Python programming on Microsoft Windows.
+
+Python(x,y) - Scientific-applications-oriented Python Distribution based on Qt and Spyder.
+pythonlibs - Unofficial Windows binaries for Python extension packages.
+PythonNet - Python Integration with the .NET Common Language Runtime (CLR).
+PyWin32 - Python Extensions for Windows.
+WinPython - Portable development environment for Windows 7/8.
+
+Miscellaneous
+Useful libraries or tools that don't fit in the categories above.
+
+blinker - A fast Python in-process signal/event dispatching system.
+boltons - A set of pure-Python utilities.
+itsdangerous - Various helpers to pass trusted data to untrusted environments.
+pluginbase - A simple but flexible plugin system for Python.
+tryton - A general purpose business framework.
+
+Natural Language Processing
+Libraries for working with human languages.
+
+General
+
+gensim - Topic Modelling for Humans.
+langid.py - Stand-alone language identification system.
+nltk - A leading platform for building Python programs to work with human language data.
+pattern - A web mining module for the Python.
+polyglot - Natural language pipeline supporting hundreds of languages.
+pytext - A natural language modeling framework based on PyTorch.
+PyTorch-NLP - A toolkit enabling rapid deep learning NLP prototyping for research.
+spacy - A library for industrial-strength natural language processing in Python and Cython.
+stanfordnlp - The Stanford NLP Group's official Python library, supporting 50+ languages.
+
+
+Chinese
+
+jieba - The most popular Chinese text segmentation library.
+pkuseg-python - A toolkit for Chinese word segmentation in various domains.
+snownlp - A library for processing Chinese text.
+funNLP - A collection of tools and datasets for Chinese NLP.
+
+
+
+Network Virtualization
+Tools and libraries for Virtual Networking and SDN (Software Defined Networking).
+
+mininet - A popular network emulator and API written in Python.
+pox - A Python-based SDN control applications, such as OpenFlow SDN controllers.
+
+Networking
+Libraries for networking programming.
+
+asyncio - (Python standard library) Asynchronous I/O, event loop, coroutines and tasks.
+
+awesome-asyncio
+
+
+pulsar - Event-driven concurrent framework for Python.
+pyzmq - A Python wrapper for the ZeroMQ message library.
+Twisted - An event-driven networking engine.
+napalm - Cross-vendor API to manipulate network devices.
+
+News Feed
+Libraries for building user's activities.
+
+django-activity-stream - Generating generic activity streams from the actions on your site.
+Stream Framework - Building newsfeed and notification systems using Cassandra and Redis.
+
+ORM
+Libraries that implement Object-Relational Mapping or data mapping techniques.
+
+Relational Databases
+
+Django Models - A part of Django.
+SQLAlchemy - The Python SQL Toolkit and Object Relational Mapper.
+
+awesome-sqlalchemy
+
+
+dataset - Store Python dicts in a database - works with SQLite, MySQL, and PostgreSQL.
+orator -  The Orator ORM provides a simple yet beautiful ActiveRecord implementation.
+peewee - A small, expressive ORM.
+pony - ORM that provides a generator-oriented interface to SQL.
+pydal - A pure Python Database Abstraction Layer.
+
+
+NoSQL Databases
+
+hot-redis - Rich Python data types for Redis.
+mongoengine - A Python Object-Document-Mapper for working with MongoDB.
+PynamoDB - A Pythonic interface for Amazon DynamoDB.
+redisco - A Python Library for Simple Models and Containers Persisted in Redis.
+
+
+
+Package Management
+Libraries for package and dependency management.
+
+pip - The Python package and dependency manager.
+
+PyPI
+pip-tools - A set of tools to keep your pinned Python dependencies fresh.
+
+
+conda - Cross-platform, Python-agnostic binary package manager.
+
+Package Repositories
+Local PyPI repository server and proxies.
+
+warehouse - Next generation Python Package Repository (PyPI).
+bandersnatch - PyPI mirroring tool provided by Python Packaging Authority (PyPA).
+devpi - PyPI server and packaging/testing/release tool.
+localshop - Local PyPI server (custom packages and auto-mirroring of pypi).
+
+Permissions
+Libraries that allow or deny users access to data or functionality.
+
+django-guardian - Implementation of per object permissions for Django 1.2+
+django-rules - A tiny but powerful app providing object-level permissions to Django, without requiring a database.
+
+Processes
+Libraries for starting and communicating with OS processes.
+
+delegator.py - Subprocesses for Humans™ 2.0.
+sarge - Yet another wrapper for subprocess.
+sh - A full-fledged subprocess replacement for Python.
+
+Queue
+Libraries for working with event and task queues.
+
+celery - An asynchronous task queue/job queue based on distributed message passing.
+huey - Little multi-threaded task queue.
+mrq - Mr. Queue - A distributed worker task queue in Python using Redis & gevent.
+rq - Simple job queues for Python.
+
+Recommender Systems
+Libraries for building recommender systems.
+
+annoy - Approximate Nearest Neighbors in C++/Python optimized for memory usage.
+fastFM - A library for Factorization Machines.
+implicit - A fast Python implementation of collaborative filtering for implicit datasets.
+libffm - A library for Field-aware Factorization Machine (FFM).
+lightfm - A Python implementation of a number of popular recommendation algorithms.
+spotlight - Deep recommender models using PyTorch.
+Surprise - A scikit for building and analyzing recommender systems.
+tensorrec - A Recommendation Engine Framework in TensorFlow.
+
+RESTful API
+Libraries for developing RESTful APIs.
+
+Django
+
+django-rest-framework - A powerful and flexible toolkit to build web APIs.
+django-tastypie - Creating delicious APIs for Django apps.
+
+
+Flask
+
+eve - REST API framework powered by Flask, MongoDB and good intentions.
+flask-api-utils - Taking care of API representation and authentication for Flask.
+flask-api - Browsable Web APIs for Flask.
+flask-restful - Quickly building REST APIs for Flask.
+flask-restless - Generating RESTful APIs for database models defined with SQLAlchemy.
+
+
+Pyramid
+
+cornice - A RESTful framework for Pyramid.
+
+
+Framework agnostic
+
+apistar - A smart Web API framework, designed for Python 3.
+falcon - A high-performance framework for building cloud APIs and web app backends.
+hug - A Python3 framework for cleanly exposing APIs over HTTP and the Command Line with automatic documentation and validation.
+restless - Framework agnostic REST framework based on lessons learned from Tastypie.
+ripozo - Quickly creating REST/HATEOAS/Hypermedia APIs.
+sandman - Automated REST APIs for existing database-driven systems.
+
+
+
+Robotics
+Libraries for robotics.
+
+PythonRobotics - This is a compilation of various robotics algorithms with visualizations.
+rospy - This is a library for ROS (Robot Operating System).
+
+RPC Servers
+RPC-compatible servers.
+
+SimpleJSONRPCServer - This library is an implementation of the JSON-RPC specification.
+SimpleXMLRPCServer - (Python standard library) Simple XML-RPC server implementation, single-threaded.
+zeroRPC - zerorpc is a flexible RPC implementation based on ZeroMQ and MessagePack.
+
+Science
+Libraries for scientific computing.
+
+astropy - A community Python library for Astronomy.
+bcbio-nextgen - Providing best-practice pipelines for fully automated high throughput sequencing analysis.
+bccb - Collection of useful code related to biological analysis.
+Biopython - Biopython is a set of freely available tools for biological computation.
+cclib - A library for parsing and interpreting the results of computational chemistry packages.
+Colour - A colour science package implementing a comprehensive number of colour theory transformations and algorithms.
+NetworkX - A high-productivity software for complex networks.
+NIPY - A collection of neuroimaging toolkits.
+NumPy - A fundamental package for scientific computing with Python.
+Open Babel - A chemical toolbox designed to speak the many languages of chemical data.
+ObsPy - A Python toolbox for seismology.
+PyDy - Short for Python Dynamics, used to assist with workflow in the modeling of dynamic motion.
+PyMC - Markov Chain Monte Carlo sampling toolkit.
+QuTiP - Quantum Toolbox in Python.
+RDKit - Cheminformatics and Machine Learning Software.
+SciPy - A Python-based ecosystem of open-source software for mathematics, science, and engineering.
+statsmodels - Statistical modeling and econometrics in Python.
+SymPy - A Python library for symbolic mathematics.
+Zipline - A Pythonic algorithmic trading library.
+SimPy -  A process-based discrete-event simulation framework.
+
+Search
+Libraries and software for indexing and performing search queries on data.
+
+elasticsearch-py - The official low-level Python client for Elasticsearch.
+elasticsearch-dsl-py - The official high-level Python client for Elasticsearch.
+django-haystack - Modular search for Django.
+pysolr - A lightweight Python wrapper for Apache Solr.
+whoosh - A fast, pure Python search engine library.
+
+Serialization
+Libraries for serializing complex data types
+
+marshmallow - A lightweight library for converting complex objects to and from simple Python datatypes.
+pysimdjson - A Python bindings for simdjson.
+python-rapidjson - A Python wrapper around RapidJSON.
+
+Serverless Frameworks
+Frameworks for developing serverless Python code.
+
+python-lambda - A toolkit for developing and deploying Python code in AWS Lambda.
+Zappa - A tool for deploying WSGI applications on AWS Lambda and API Gateway.
+
+Specific Formats Processing
+Libraries for parsing and manipulating specific text formats.
+
+General
+
+tablib - A module for Tabular Datasets in XLS, CSV, JSON, YAML.
+
+
+Office
+
+openpyxl - A library for reading and writing Excel 2010 xlsx/xlsm/xltx/xltm files.
+pyexcel - Providing one API for reading, manipulating and writing csv, ods, xls, xlsx and xlsm files.
+python-docx - Reads, queries and modifies Microsoft Word 2007/2008 docx files.
+python-pptx - Python library for creating and updating PowerPoint (.pptx) files.
+unoconv - Convert between any document format supported by LibreOffice/OpenOffice.
+XlsxWriter - A Python module for creating Excel .xlsx files.
+xlwings - A BSD-licensed library that makes it easy to call Python from Excel and vice versa.
+xlwt / xlrd - Writing and reading data and formatting information from Excel files.
+
+
+PDF
+
+PDFMiner - A tool for extracting information from PDF documents.
+PyPDF2 - A library capable of splitting, merging and transforming PDF pages.
+ReportLab - Allowing Rapid creation of rich PDF documents.
+
+
+Markdown
+
+Mistune - Fastest and full featured pure Python parsers of Markdown.
+Python-Markdown - A Python implementation of John Gruber’s Markdown.
+
+
+YAML
+
+PyYAML - YAML implementations for Python.
+
+
+CSV
+
+csvkit - Utilities for converting to and working with CSV.
+
+
+Archive
+
+unp - A command line tool that can unpack archives easily.
+
+
+
+Static Site Generator
+Static site generator is a software that takes some text + templates as input and produces HTML files on the output.
+
+mkdocs - Markdown friendly documentation generator.
+pelican - Static site generator that supports Markdown and reST syntax.
+lektor - An easy to use static CMS and blog engine.
+nikola - A static website and blog generator.
+
+Tagging
+Libraries for tagging items.
+
+django-taggit - Simple tagging for Django.
+
+Template Engine
+Libraries and tools for templating and lexing.
+
+Jinja2 - A modern and designer friendly templating language.
+Genshi - Python templating toolkit for generation of web-aware output.
+Mako - Hyperfast and lightweight templating for the Python platform.
+
+Testing
+Libraries for testing codebases and generating test data.
+
+Testing Frameworks
+
+pytest - A mature full-featured Python testing tool.
+hypothesis - Hypothesis is an advanced Quickcheck style property based testing library.
+nose2 - The successor to nose, based on `unittest2.
+Robot Framework - A generic test automation framework.
+unittest - (Python standard library) Unit testing framework.
+
+
+Test Runners
+
+green - A clean, colorful test runner.
+mamba - The definitive testing tool for Python. Born under the banner of BDD.
+tox - Auto builds and tests distributions in multiple Python versions
+
+
+GUI / Web Testing
+
+locust - Scalable user load testing tool written in Python.
+PyAutoGUI - PyAutoGUI is a cross-platform GUI automation Python module for human beings.
+Selenium - Python bindings for Selenium WebDriver.
+sixpack - A language-agnostic A/B Testing framework.
+splinter - Open source tool for testing web applications.
+
+
+Mock
+
+doublex - Powerful test doubles framework for Python.
+freezegun - Travel through time by mocking the datetime module.
+httmock - A mocking library for requests for Python 2.6+ and 3.2+.
+httpretty - HTTP request mock tool for Python.
+mock - (Python standard library) A mocking and patching library.
+Mocket - Socket Mock Framework plus HTTP[S]/asyncio/gevent mocking library with recording/replaying capability.
+responses - A utility library for mocking out the requests Python library.
+VCR.py - Record and replay HTTP interactions on your tests.
+
+
+Object Factories
+
+factory_boy - A test fixtures replacement for Python.
+mixer - Another fixtures replacement. Supported Django, Flask, SQLAlchemy, Peewee and etc.
+model_mommy - Creating random fixtures for testing in Django.
+
+
+Code Coverage
+
+coverage - Code coverage measurement.
+
+
+Fake Data
+
+mimesis - is a Python library that help you generate fake data.
+fake2db - Fake database generator.
+faker - A Python package that generates fake data.
+radar - Generate random datetime / time.
+
+
+Error Handler
+
+FuckIt.py - FuckIt.py uses state-of-the-art technology to make sure your Python code runs whether it has any right to or not.
+
+
+
+Text Processing
+Libraries for parsing and manipulating plain texts.
+
+General
+
+chardet - Python 2/3 compatible character encoding detector.
+difflib - (Python standard library) Helpers for computing deltas.
+ftfy - Makes Unicode text less broken and more consistent automagically.
+fuzzywuzzy - Fuzzy String Matching.
+Levenshtein - Fast computation of Levenshtein distance and string similarity.
+pangu.py - Paranoid text spacing.
+pyfiglet - An implementation of figlet written in Python.
+pypinyin - Convert Chinese hanzi (漢字) to pinyin (拼音).
+textdistance - Compute distance between sequences. 30+ algorithms, pure python implementation, common interface, optional external libs usage.
+unidecode - ASCII transliterations of Unicode text.
+
+
+Slugify
+
+awesome-slugify - A Python slugify library that can preserve unicode.
+python-slugify - A Python slugify library that translates unicode to ASCII.
+unicode-slugify - A slugifier that generates unicode slugs with Django as a dependency.
+
+
+Unique identifiers
+
+hashids - Implementation of hashids in Python.
+shortuuid - A generator library for concise, unambiguous and URL-safe UUIDs.
+
+
+Parser
+
+ply - Implementation of lex and yacc parsing tools for Python.
+pygments - A generic syntax highlighter.
+pyparsing - A general purpose framework for generating parsers.
+python-nameparser - Parsing human names into their individual components.
+python-phonenumbers - Parsing, formatting, storing and validating international phone numbers.
+python-user-agents - Browser user agent parser.
+sqlparse - A non-validating SQL parser.
+
+
+
+Third-party APIs
+Libraries for accessing third party services APIs. See: List of Python API Wrappers and Libraries.
+
+apache-libcloud - One Python library for all clouds.
+boto3 - Python interface to Amazon Web Services.
+django-wordpress - WordPress models and views for Django.
+facebook-sdk - Facebook Platform Python SDK.
+google-api-python-client - Google APIs Client Library for Python.
+gspread - Google Spreadsheets Python API.
+twython - A Python wrapper for the Twitter API.
+
+URL Manipulation
+Libraries for parsing URLs.
+
+furl - A small Python library that makes parsing and manipulating URLs easy.
+purl - A simple, immutable URL class with a clean API for interrogation and manipulation.
+pyshorteners - A pure Python URL shortening lib.
+webargs - A friendly library for parsing HTTP request arguments, with built-in support for popular web frameworks, including Flask, Django, Bottle, Tornado, and Pyramid.
+
+Video
+Libraries for manipulating video and GIFs.
+
+moviepy - A module for script-based movie editing with many formats, including animated GIFs.
+scikit-video - Video processing routines for SciPy.
+
+WSGI Servers
+WSGI-compatible web servers.
+
+bjoern - Asynchronous, very fast and written in C.
+gunicorn - Pre-forked, partly written in C.
+uWSGI - A project aims at developing a full stack for building hosting services, written in C.
+waitress - Multi-threaded, powers Pyramid.
+werkzeug - A WSGI utility library for Python that powers Flask and can easily be embedded into your own projects.
+
+Web Asset Management
+Tools for managing, compressing and minifying website assets.
+
+django-compressor - Compresses linked and inline JavaScript or CSS into a single cached file.
+django-pipeline - An asset packaging library for Django.
+django-storages - A collection of custom storage back ends for Django.
+fanstatic - Packages, optimizes, and serves static file dependencies as Python packages.
+fileconveyor - A daemon to detect and sync files to CDNs, S3 and FTP.
+flask-assets - Helps you integrate webassets into your Flask app.
+webassets - Bundles, optimizes, and manages unique cache-busting URLs for static resources.
+
+Web Content Extracting
+Libraries for extracting web contents.
+
+html2text - Convert HTML to Markdown-formatted text.
+lassie - Web Content Retrieval for Humans.
+micawber - A small library for extracting rich content from URLs.
+newspaper - News extraction, article extraction and content curation in Python.
+python-readability - Fast Python port of arc90's readability tool.
+requests-html - Pythonic HTML Parsing for Humans.
+sumy - A module for automatic summarization of text documents and HTML pages.
+textract - Extract text from any document, Word, PowerPoint, PDFs, etc.
+toapi - Every web site provides APIs.
+
+Web Crawling & Web Scraping
+Libraries to automate data extraction from websites.
+
+cola - A distributed crawling framework.
+feedparser - Universal feed parser.
+grab - Site scraping framework.
+MechanicalSoup - A Python library for automating interaction with websites.
+portia - Visual scraping for Scrapy.
+pyspider - A powerful spider system.
+robobrowser - A simple, Pythonic library for browsing the web without a standalone web browser.
+scrapy - A fast high-level screen scraping and web crawling framework.
+
+Web Frameworks
+Full stack web frameworks.
+
+Django - The most popular web framework in Python.
+
+awesome-django
+
+
+Flask - A microframework for Python.
+
+awesome-flask
+
+
+Pyramid - A small, fast, down-to-earth, open source Python web framework.
+
+awesome-pyramid
+
+
+Sanic - Web server that's written to go fast.
+Vibora - Fast, efficient and asynchronous Web framework inspired by Flask.
+Tornado - A Web framework and asynchronous networking library.
+
+WebSocket
+Libraries for working with WebSocket.
+
+autobahn-python - WebSocket & WAMP for Python on Twisted and asyncio.
+crossbar - Open-source Unified Application Router (Websocket & WAMP for Python on Autobahn).
+django-channels - Developer-friendly asynchrony for Django.
+django-socketio - WebSockets for Django.
+WebSocket-for-Python - WebSocket client and server library for Python 2 and 3 as well as PyPy.
+
+Services
+Online tools and APIs to simplify development.
+Continuous Integration
+See: awesome-CIandCD.
+
+CircleCI - A CI service that can run very fast parallel testing. (GitHub only)
+Travis CI - A popular CI service for your open source and private projects. (GitHub only)
+Vexor CI - A continuous integration tool for private apps with pay-per-minute billing model.
+Wercker - A Docker-based platform for building and deploying applications and microservices.
+
+Code Quality
+
+Codacy - Automated Code Review to ship better code, faster.
+Codecov - Code coverage dashboard.
+CodeFactor - Automated Code Review for Git.
+Landscape - Hosted continuous Python code metrics.
+
+Resources
+Where to discover new Python libraries.
+Podcasts
+
+From Python Import Podcast
+Podcast.init
+Python Bytes
+Python Testing
+Radio Free Python
+Talk Python To Me
+
+Twitter
+
+@codetengu
+@getpy
+@importpython
+@planetpython
+@pycoders
+@pypi
+@pythontrending
+@PythonWeekly
+@TalkPython
+@realpython
+
+Websites
+
+/r/CoolGithubProjects
+/r/Python
+Awesome Python @LibHunt
+Django Packages
+Full Stack Python
+PyPI Ranking
+Python 3 Wall of Superpowers
+Python Hackers
+Python ZEEF
+Python 开发社区
+Real Python
+Trending Python repositories on GitHub today
+
+Weekly
+
+CodeTengu Weekly 碼天狗週刊
+Import Python Newsletter
+Pycoder's Weekly
+Python Weekly
+Python Tricks
+
+Contributing
+Your contributions are always welcome! Please take a look at the contribution guidelines first.
+I will keep some pull requests open if I'm not sure whether those libraries are awesome, you could vote for them by adding 👍 to them. Pull requests will be merged when their votes reach 20.
+
+If you have any question about this opinionated list, do not hesitate to contact me @vinta on Twitter or open an issue on GitHub.
+
+",Python
+"
+ASP.NET Core Docs
+This repository contains the conceptual ASP.NET Core documentation hosted at docs.microsoft.com/aspnet. See the Contributing Guide and the issues list if you would like to help out.
+API documentation changes should be made in the ApiDocs repository against the triple slash /// comments.
+ASP.NET 4.x documentation changes should be made in the aspnet/AspNetDocs repository.
+Microsoft Open Source Code of Conduct
+This project has adopted the Microsoft Open Source Code of Conduct.
+For more information, see the Code of Conduct FAQ or contact opencode@microsoft.com with any additional questions or comments.
+
+",C#
+"
+ Shadowsocks for Windows
+
+中文说明
+Features
+
+System proxy configuration
+PAC mode and global mode
+GFWList and user rules
+Supports HTTP proxy
+Supports server auto switching
+Supports UDP relay (see Usage)
+Supports plugins
+
+Download
+Download the latest release from release page.
+Requirements
+Microsoft .NET Framework 4.6.2 or higher, Microsoft Visual C++ 2015 Redistributable (x86) .
+Basic
+
+Find Shadowsocks icon in the notification tray
+You can add multiple servers in servers menu
+Select Enable System Proxy menu to enable system proxy. Please disable other
+proxy addons in your browser, or set them to use system proxy
+You can also configure your browser proxy manually if you don't want to enable
+system proxy. Set Socks5 or HTTP proxy to 127.0.0.1:1080. You can change this
+port in Servers -> Edit Servers
+
+PAC
+
+You can change PAC rules by editing the PAC file. When you save the PAC file
+with any editor, Shadowsocks will notify browsers about the change automatically
+You can also update PAC file from GFWList (maintained by 3rd party)
+You can also use online PAC URL
+
+Server Auto Switching
+
+Load balance: choosing server randomly
+High availability: choosing the best server (low latency and packet loss)
+Choose By Total Package Loss: ping and choose. Please also enable
+Availability Statistics in the menu if you want to use this
+Write your own strategy by implement IStrategy interface and send us a pull request!
+
+UDP
+For UDP, you need to use SocksCap or ProxyCap to force programs you want
+to be proxied to tunnel over Shadowsocks
+Multiple Instances
+If you want to manage multiple servers using other tools like SwitchyOmega,
+you can start multiple Shadowsocks instances. To avoid configuration conflicts,
+copy Shadowsocks to a new directory and choose a different local port.
+Plugins
+If you would like to connect to server via a plugin, please set the plugin's
+path (relative or absolute) on Edit Servers form.
+Note: Forward Proxy will not be used while a plugin is enabled.
+Details:
+Working with non SIP003 standard Plugin.
+Global hotkeys
+Hotkeys could be registered automatically on startup.
+If you are using multiple instances of Shadowsocks,
+you must set different key combination for each instance.
+How to input?
+
+Put focus in the corresponding textbox.
+Press the key combination that you want to use.
+Release all keys when you think it is ready.
+Your input appears in the textbox.
+
+How to change?
+
+Put focus in the corresponding textbox.
+Press BackSpace key to clear content.
+Re-input new key combination.
+
+How to deactivate?
+
+Clear content in the textbox that you want to deactivate,
+if you want to deactivate all, please clear all textboxes.
+Press OK button to confirm.
+
+Meaning of label color
+
+Green: This key combination is not occupied by other programs and register successfully.
+Yellow: This key combination is occupied by other programs and you have to change to another one.
+Transparent without color: The initial status.
+
+Server Configuration
+Please visit Servers for more information.
+Development
+
+Visual Studio 2015 & .NET Framework 4.6.2 Developer Pack are required.
+It is recommended to share your idea on the Issue Board before you start to work,
+especially for feature development.
+
+License
+GPLv3
+Open Source Components / Libraries
+Caseless.Fody (MIT)    https://github.com/Fody/Caseless
+Costura.Fody (MIT)     https://github.com/Fody/Costura
+Fody (MIT)             https://github.com/Fody/Fody
+GlobalHotKey (GPLv3)   https://github.com/kirmir/GlobalHotKey
+Newtonsoft.Json (MIT)  https://www.newtonsoft.com/json
+StringEx.CS ()         https://github.com/LazyMode/StringEx
+ZXing.Net (Apache 2.0) https://github.com/micjahn/ZXing.Net
+
+libsscrypto (GPLv2)    https://github.com/shadowsocks/libsscrypto
+Privoxy (GPLv2)        https://www.privoxy.org
+Sysproxy ()            https://github.com/Noisyfox/sysproxy
+
+
+",C#
+"
+
+Redux is a predictable state container for JavaScript apps.
+(Not to be confused with a WordPress framework – Redux Framework.)
+It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. On top of that, it provides a great developer experience, such as live code editing combined with a time traveling debugger.
+You can use Redux together with React, or with any other view library.
+It is tiny (2kB, including dependencies).
+
+Note: We are currently planning a rewrite of the Redux docs. Please take some time to fill out this survey on what content is most important in a docs site. Thanks!
+
+
+
+
+
+
+Learn Redux
+We have a variety of resources available to help you learn Redux, no matter what your background or learning style is.
+Just the Basics
+If you're brand new to Redux and want to understand the basic concepts, see:
+
+The Motivation behind building Redux, the Core Concepts, and the Three Principles.
+The basic tutorial in the Redux docs
+Redux creator Dan Abramov's free ""Getting Started with Redux"" video series on Egghead.io
+Redux co-maintainer Mark Erikson's ""Redux Fundamentals"" slideshow and list of suggested resources for learning Redux
+If you learn best by looking at code and playing with it, check out our list of Redux example applications, available as separate projects in the Redux repo, and also as interactive online examples on CodeSandbox.
+The Redux Tutorials section of the React/Redux links list. Here's a top list of our recommended tutorials:
+
+Dave Ceddia's posts What Does Redux Do? (and when should you use it?) and How Redux Works: A Counter-Example are a great intro to the basics of Redux and how to use it with React, as is this post on React and Redux: An Introduction.
+Valentino Gagliardi's post React Redux Tutorial for Beginners: Learning Redux in 2018 is an excellent extended introduction to many aspects of using Redux.
+The CSS Tricks article Leveling Up with React: Redux covers the Redux basics well.
+This DevGuides: Introduction to Redux tutorial covers several aspects of Redux, including actions, reducers, usage with React, and middleware.
+
+
+
+Intermediate Concepts
+Once you've picked up the basics of working with actions, reducers, and the store, you may have questions about topics like working with asynchronous logic and AJAX requests, connecting a UI framework like React to your Redux store, and setting up an application to use Redux:
+
+The ""Advanced"" docs section covers working with async logic, middleware, routing.
+The Redux docs ""Learning Resources"" page points to recommended articles on a variety of Redux-related topics.
+Sophie DeBenedetto's 8-part Building a Simple CRUD App with React + Redux series shows how to put together a basic CRUD app from scratch.
+
+Real-World Usage
+Going from a TodoMVC app to a real production application can be a big jump, but we've got plenty of resources to help:
+
+Redux creator Dan Abramov's free ""Building React Applications with Idiomatic Redux"" video series builds on his first video series and covers topics like middleware, routing, and persistence.
+The Redux FAQ answers many common questions about how to use Redux, and the ""Recipes"" docs section has information on handling derived data, testing, structuring reducer logic, and reducing boilerplate.
+Redux co-maintainer Mark Erikson's ""Practical Redux"" tutorial series demonstrates real-world intermediate and advanced techniques for working with React and Redux (also available as an interactive course on Educative.io).
+The React/Redux links list has categorized articles on working with reducers and selectors, managing side effects, Redux architecture and best practices, and more.
+Our community has created thousands of Redux-related libraries, addons, and tools. The ""Ecosystem"" docs page lists our recommendations, and there's a complete listing available in the Redux addons catalog.
+If you're looking to learn from actual application codebases, the addons catalog also has a list of purpose-built examples and real-world applications.
+
+Finally, Mark Erikson is teaching a series of Redux workshops through Workshop.me. Check the workshop schedule for upcoming dates and locations.
+Help and Discussion
+The #redux channel of the Reactiflux Discord community is our official resource for all questions related to learning and using Redux. Reactiflux is a great place to hang out, ask questions, and learn - come join us!
+Before Proceeding Further
+Redux is a valuable tool for organizing your state, but you should also consider whether it's appropriate for your situation. Don't use Redux just because someone said you should - take some time to understand the potential benefits and tradeoffs of using it.
+Here are some suggestions on when it makes sense to use Redux:
+
+You have reasonable amounts of data changing over time
+You need a single source of truth for your state
+You find that keeping all your state in a top-level component is no longer sufficient
+
+Yes, these guidelines are subjective and vague, but this is for good reason. The point at which you should integrate Redux into your application is different for every user and different for every application.
+
+For more thoughts on how Redux is meant to be used, see:
+
+You Might Not Need Redux
+The Tao of Redux, Part 1 - Implementation and Intent
+The Tao of Redux, Part 2 - Practice and Philosophy
+Redux FAQ
+
+
+Developer Experience
+Dan Abramov (author of Redux) wrote Redux while working on his React Europe talk called “Hot Reloading with Time Travel”. His goal was to create a state management library with a minimal API but completely predictable behavior. Redux makes it possible to implement logging, hot reloading, time travel, universal apps, record and replay, without any buy-in from the developer.
+Influences
+Redux evolves the ideas of Flux, but avoids its complexity by taking cues from Elm.
+Even if you haven't used Flux or Elm, Redux only takes a few minutes to get started with.
+Installation
+To install the stable version:
+npm install --save redux
+This assumes you are using npm as your package manager.
+If you're not, you can access these files on unpkg, download them, or point your package manager to them.
+Most commonly, people consume Redux as a collection of CommonJS modules. These modules are what you get when you import redux in a Webpack, Browserify, or a Node environment. If you like to live on the edge and use Rollup, we support that as well.
+If you don't use a module bundler, it's also fine. The redux npm package includes precompiled production and development UMD builds in the dist folder. They can be used directly without a bundler and are thus compatible with many popular JavaScript module loaders and environments. For example, you can drop a UMD build as a <script> tag on the page, or tell Bower to install it. The UMD builds make Redux available as a window.Redux global variable.
+The Redux source code is written in ES2015 but we precompile both CommonJS and UMD builds to ES5 so they work in any modern browser. You don't need to use Babel or a module bundler to get started with Redux. You can even use the ES module build that's available at es/redux.mjs which can be referenced using type=""module"" in your script tag or as a standard import.
+Complementary Packages
+Most likely, you'll also need the React bindings and the developer tools.
+npm install --save react-redux
+npm install --save-dev redux-devtools
+Note that unlike Redux itself, many packages in the Redux ecosystem don't provide UMD builds, so we recommend using CommonJS module bundlers like Webpack and Browserify for the most comfortable development experience.
+The Gist
+The whole state of your app is stored in an object tree inside a single store.
+The only way to change the state tree is to emit an action, an object describing what happened.
+To specify how the actions transform the state tree, you write pure reducers.
+That's it!
+import { createStore } from 'redux'
+
+/**
+ * This is a reducer, a pure function with (state, action) => state signature.
+ * It describes how an action transforms the state into the next state.
+ *
+ * The shape of the state is up to you: it can be a primitive, an array, an object,
+ * or even an Immutable.js data structure. The only important part is that you should
+ * not mutate the state object, but return a new object if the state changes.
+ *
+ * In this example, we use a `switch` statement and strings, but you can use a helper that
+ * follows a different convention (such as function maps) if it makes sense for your
+ * project.
+ */
+function counter(state = 0, action) {
+  switch (action.type) {
+    case 'INCREMENT':
+      return state + 1
+    case 'DECREMENT':
+      return state - 1
+    default:
+      return state
+  }
+}
+
+// Create a Redux store holding the state of your app.
+// Its API is { subscribe, dispatch, getState }.
+let store = createStore(counter)
+
+// You can use subscribe() to update the UI in response to state changes.
+// Normally you'd use a view binding library (e.g. React Redux) rather than subscribe() directly.
+// However it can also be handy to persist the current state in the localStorage.
+
+store.subscribe(() => console.log(store.getState()))
+
+// The only way to mutate the internal state is to dispatch an action.
+// The actions can be serialized, logged or stored and later replayed.
+store.dispatch({ type: 'INCREMENT' })
+// 1
+store.dispatch({ type: 'INCREMENT' })
+// 2
+store.dispatch({ type: 'DECREMENT' })
+// 1
+Instead of mutating the state directly, you specify the mutations you want to happen with plain objects called actions. Then you write a special function called a reducer to decide how every action transforms the entire application's state.
+If you're coming from Flux, there is a single important difference you need to understand. Redux doesn't have a Dispatcher or support many stores. Instead, there is just a single store with a single root reducing function. As your app grows, instead of adding stores, you split the root reducer into smaller reducers independently operating on the different parts of the state tree. This is exactly like how there is just one root component in a React app, but it is composed out of many small components.
+This architecture might seem like an overkill for a counter app, but the beauty of this pattern is how well it scales to large and complex apps. It also enables very powerful developer tools, because it is possible to trace every mutation to the action that caused it. You can record user sessions and reproduce them just by replaying every action.
+Learn Redux from Its Authors
+Redux Video Tutorials by Dan Abramov
+Getting Started with Redux
+Getting Started with Redux is a video course consisting of 30 videos narrated by Dan Abramov, author of Redux. It is designed to complement the “Basics” part of the docs while bringing additional insights about immutability, testing, Redux best practices, and using Redux with React. This course is free and will always be.
+
+“Great course on egghead.io by @dan_abramov - instead of just showing you how to use #redux, it also shows how and why redux was built!”
+Sandrino Di Mattia
+
+
+“Plowing through @dan_abramov 'Getting Started with Redux' - its amazing how much simpler concepts get with video.”
+Chris Dhanaraj
+
+
+“This video series on Redux by @dan_abramov on @eggheadio is spectacular!”
+Eddie Zaneski
+
+
+“Come for the name hype. Stay for the rock solid fundamentals. (Thanks, and great job @dan_abramov and @eggheadio!)”
+Dan
+
+
+“This series of videos on Redux by @dan_abramov is repeatedly blowing my mind - gunna do some serious refactoring”
+Laurence Roberts
+
+So, what are you waiting for?
+Watch the free ""Getting Started with Redux"" video series
+
+Note: If you enjoyed Dan's course, consider supporting Egghead by buying a subscription. Subscribers have access to the source code of every example in my videos and tons of advanced lessons on other topics, including JavaScript in depth, React, Angular, and more. Many Egghead instructors are also open source library authors, so buying a subscription is a nice way to thank them for the work that they've done.
+
+Building React Applications with Idiomatic Redux
+The Building React Applications with Idiomatic Redux course is a second free video series by Dan Abramov. It picks up where the first series left off, and covers practical production ready techniques for building your React and Redux applications: advanced state management, middleware, React Router integration, and other common problems you are likely to encounter while building applications for your clients and customers. As with the first series, this course will always be free.
+Watch the free ""Idiomatic Redux"" video series
+Practical Redux course
+Practical Redux is a paid interactive course by Redux co-maintainer Mark Erikson. The course is designed to show how to apply the basic concepts of Redux to building something larger than a TodoMVC application. It includes real-world topics like:
+
+Adding Redux to a new Create-React-App project and configuring Hot Module Replacement for faster development
+Controlling your UI behavior with Redux
+Using the Redux-ORM library to manage relational data in your Redux store
+Building a master/detail view to display and edit data
+Writing custom advanced Redux reducer logic to solve specific problems
+Optimizing performance of Redux-connected form inputs
+
+And much more!
+The course is based on Mark's original free ""Practical Redux"" blog tutorial series, but with updated and improved content.
+Redux Fundamentals Workshop
+Redux co-maintainer Mark Erikson has put together a Redux Fundamentals workshop, and slides are available here. They cover:
+
+The history and purpose of Redux
+Reducers and actions, and working with a Redux store
+Using Redux with React
+Using and writing Redux middleware
+Working with AJAX calls and other side effects
+Unit testing Redux apps
+Real-world Redux app structure and development
+
+Documentation
+
+Introduction
+Basics
+Advanced
+Recipes
+FAQ
+Troubleshooting
+Glossary
+API Reference
+
+For PDF, ePub, and MOBI exports for offline reading, and instructions on how to create them, please see: paulkogel/redux-offline-docs.
+For Offline docs, please see: devdocs
+Examples
+Almost all examples have a corresponding CodeSandbox sandbox. This is an interactive version of the code that you can play with online.
+
+Counter Vanilla: Source
+Counter: Source | Sandbox
+Todos: Source | Sandbox
+Todos with Undo: Source | Sandbox
+Todos w/ Flow: Source
+TodoMVC: Source | Sandbox
+Shopping Cart: Source | Sandbox
+Tree View: Source | Sandbox
+Async: Source | Sandbox
+Universal: Source
+Real World: Source | Sandbox
+
+If you're new to the NPM ecosystem and have troubles getting a project up and running, or aren't sure where to paste the gist above, check out simplest-redux-example that uses Redux together with React and Browserify.
+Testimonials
+
+“Love what you're doing with Redux”
+Jing Chen, creator of Flux
+
+
+“I asked for comments on Redux in FB's internal JS discussion group, and it was universally praised. Really awesome work.”
+Bill Fisher, author of Flux documentation
+
+
+“It's cool that you are inventing a better Flux by not doing Flux at all.”
+André Staltz, creator of Cycle
+
+Thanks
+
+The Elm Architecture for a great intro to modeling state updates with reducers;
+Turning the database inside-out for blowing my mind;
+Developing ClojureScript with Figwheel for convincing me that re-evaluation should “just work”;
+Webpack for Hot Module Replacement;
+Flummox for teaching me to approach Flux without boilerplate or singletons;
+disto for a proof of concept of hot reloadable Stores;
+NuclearJS for proving this architecture can be performant;
+Om for popularizing the idea of a single state atom;
+Cycle for showing how often a function is the best tool;
+React for the pragmatic innovation.
+
+Special thanks to Jamie Paton for handing over the redux NPM package name.
+Logo
+You can find the official logo on GitHub.
+Change Log
+This project adheres to Semantic Versioning.
+Every release, along with the migration instructions, is documented on the GitHub Releases page.
+Patrons
+The work on Redux was funded by the community.
+Meet some of the outstanding companies that made it possible:
+
+Webflow
+Ximedes
+
+See the full list of Redux patrons, as well as the always-growing list of people and companies that use Redux.
+License
+MIT
+
+",JavaScript
+"
+jQuery File Upload Plugin
+Description
+File Upload widget with multiple file selection, drag&drop support, progress bars, validation and preview images, audio and video for jQuery.
+Supports cross-domain, chunked and resumable file uploads and client-side image resizing. Works with any server-side platform (PHP, Python, Ruby on Rails, Java, Node.js, Go etc.) that supports standard HTML form file uploads.
+Demo
+Demo File Upload
+⚠️ Security Notice
+Security related releases:
+
+v9.25.1 Mitigates some Potential vulnerabilities with PHP+ImageMagick.
+v9.24.1 Fixes a Remote code execution vulnerability in the PHP component.
+v9.10.1 Fixes an Open redirect vulnerability in the GAE components.
+Commit 4175032 (fixed in all tagged releases) Fixes a Cross-site scripting vulnerability in the Iframe Transport.
+
+Please read the SECURITY document for instructions on how to securely configure your Webserver for file uploads.
+Setup
+
+How to setup the plugin on your website
+How to use only the basic plugin (minimal setup guide).
+
+Features
+
+Multiple file upload:
+Allows to select multiple files at once and upload them simultaneously.
+Drag & Drop support:
+Allows to upload files by dragging them from your desktop or file manager and dropping them on your browser window.
+Upload progress bar:
+Shows a progress bar indicating the upload progress for individual files and for all uploads combined.
+Cancelable uploads:
+Individual file uploads can be canceled to stop the upload progress.
+Resumable uploads:
+Aborted uploads can be resumed with browsers supporting the Blob API.
+Chunked uploads:
+Large files can be uploaded in smaller chunks with browsers supporting the Blob API.
+Client-side image resizing:
+Images can be automatically resized on client-side with browsers supporting the required JS APIs.
+Preview images, audio and video:
+A preview of image, audio and video files can be displayed before uploading with browsers supporting the required APIs.
+No browser plugins (e.g. Adobe Flash) required:
+The implementation is based on open standards like HTML5 and JavaScript and requires no additional browser plugins.
+Graceful fallback for legacy browsers:
+Uploads files via XMLHttpRequests if supported and uses iframes as fallback for legacy browsers.
+HTML file upload form fallback:
+Allows progressive enhancement by using a standard HTML file upload form as widget element.
+Cross-site file uploads:
+Supports uploading files to a different domain with cross-site XMLHttpRequests or iframe redirects.
+Multiple plugin instances:
+Allows to use multiple plugin instances on the same webpage.
+Customizable and extensible:
+Provides an API to set individual options and define callback methods for various upload events.
+Multipart and file contents stream uploads:
+Files can be uploaded as standard ""multipart/form-data"" or file contents stream (HTTP PUT file upload).
+Compatible with any server-side application platform:
+Works with any server-side platform (PHP, Python, Ruby on Rails, Java, Node.js, Go etc.) that supports standard HTML form file uploads.
+
+Requirements
+Mandatory requirements
+
+jQuery v. 1.6+
+jQuery UI widget factory v. 1.9+ (included): Required for the basic File Upload plugin, but very lightweight without any other dependencies from the jQuery UI suite.
+jQuery Iframe Transport plugin (included): Required for browsers without XHR file upload support.
+
+Optional requirements
+
+JavaScript Templates engine v. 2.5.4+: Used to render the selected and uploaded files for the Basic Plus UI and jQuery UI versions.
+JavaScript Load Image library v. 1.13.0+: Required for the image previews and resizing functionality.
+JavaScript Canvas to Blob polyfill v. 2.1.1+:Required for the image previews and resizing functionality.
+blueimp Gallery v. 2.15.1+: Used to display the uploaded images in a lightbox.
+Bootstrap v. 3.2.0+
+Glyphicons
+
+The user interface of all versions, except the jQuery UI version, is built with Bootstrap and icons from Glyphicons.
+Cross-domain requirements
+Cross-domain File Uploads using the Iframe Transport plugin require a redirect back to the origin server to retrieve the upload results. The example implementation makes use of result.html as a static redirect page for the origin server.
+The repository also includes the jQuery XDomainRequest Transport plugin, which enables limited cross-domain AJAX requests in Microsoft Internet Explorer 8 and 9 (IE 10 supports cross-domain XHR requests).
+The XDomainRequest object allows GET and POST requests only and doesn't support file uploads. It is used on the Demo to delete uploaded files from the cross-domain demo file upload service.
+Custom Backends
+You can add support for various backends by adhering to the specification outlined here.
+Browsers
+Desktop browsers
+The File Upload plugin is regularly tested with the latest browser versions and supports the following minimal versions:
+
+Google Chrome
+Apple Safari 4.0+
+Mozilla Firefox 3.0+
+Opera 11.0+
+Microsoft Internet Explorer 6.0+
+
+Mobile browsers
+The File Upload plugin has been tested with and supports the following mobile browsers:
+
+Apple Safari on iOS 6.0+
+Google Chrome on iOS 6.0+
+Google Chrome on Android 4.0+
+Default Browser on Android 2.3+
+Opera Mobile 12.0+
+
+Supported features
+For a detailed overview of the features supported by each browser version, please have a look at the Extended browser support information.
+Contributing
+Bug fixes and new features can be proposed using pull requests.
+Please read the contribution guidelines before submitting a pull request.
+Support
+This project is actively maintained, but there is no official support channel.
+If you have a question that another developer might help you with, please post to Stack Overflow and tag your question with blueimp jquery file upload.
+License
+Released under the MIT license.
+
+",JavaScript
+"
+Python - 100天从新手到大师
+
+作者：骆昊
+
+Python应用领域和就业形势分析
+简单的说，Python是一个“优雅”、“明确”、“简单”的编程语言。
+
+学习曲线低，非专业人士也能上手
+开源系统，拥有强大的生态圈
+解释型语言，完美的平台可移植性
+支持面向对象和函数式编程
+能够通过调用C/C++代码扩展功能
+代码规范程度高，可读性强
+
+目前几个比较流行的领域，Python都有用武之地。
+
+云基础设施 - Python / Java / Go
+DevOps - Python / Shell / Ruby / Go
+网络爬虫 - Python / PHP / C++
+数据分析挖掘 - Python / R / Scala / Matlab
+机器学习 - Python / R / Java / Lisp
+
+作为一名Python开发者，主要的就业领域包括：
+
+Python服务器后台开发 / 游戏服务器开发 / 数据接口开发工程师
+Python自动化运维工程师
+Python数据分析 / 数据可视化 / 大数据工程师
+Python爬虫工程师
+Python聊天机器人开发 / 图像识别和视觉算法 / 深度学习工程师
+
+下图显示了主要城市Python招聘需求量及薪资待遇排行榜（截止到2018年5月）。
+
+
+
+给初学者的几个建议：
+
+Make English as your working language.
+Practice makes perfect.
+All experience comes from mistakes.
+Don't be one of the leeches.
+Either stand out or kicked out.
+
+Day01~15 - Python语言基础
+Day01 - 初识Python
+
+Python简介 - Python的历史 / Python的优缺点 / Python的应用领域
+搭建编程环境 - Windows环境 / Linux环境 / MacOS环境
+从终端运行Python程序 - DOS命令 / Hello, world / print函数 / 运行程序
+使用IDLE - 交互式环境(REPL) / 编写多行代码 / 运行程序 / 退出IDLE
+注释 - 注释的作用 / 单行注释 / 多行注释
+
+Day02 - 语言元素
+
+程序和进制 - 指令和程序 / 冯诺依曼机 / 二进制和十进制 / 八进制和十六进制
+变量和类型 - 变量的命名 / 变量的使用 / input函数 / 检查变量类型 / 类型转换
+数字和字符串 - 整数 / 浮点数 / 复数 / 字符串 / 字符串基本操作 / 字符编码
+运算符 - 数学运算符 / 赋值运算符 / 比较运算符 / 逻辑运算符 / 身份运算符 / 运算符的优先级
+应用案例 - 华氏温度转换成摄氏温度 / 输入圆的半径计算周长和面积 / 输入年份判断是否是闰年
+
+Day03 - 分支结构
+
+分支结构的应用场景 - 条件 / 缩进 / 代码块 / 流程图
+if语句 - 简单的if / if-else结构 / if-elif-else结构 / 嵌套的if
+应用案例 - 用户身份验证 / 英制单位与公制单位互换 / 掷骰子决定做什么 / 百分制成绩转等级制 / 分段函数求值 / 输入三条边的长度如果能构成三角形就计算周长和面积
+
+Day04 - 循环结构
+
+循环结构的应用场景 - 条件 / 缩进 / 代码块 / 流程图
+while循环 - 基本结构 / break语句 / continue语句
+for循环 - 基本结构 / range类型 / 循环中的分支结构 / 嵌套的循环 / 提前结束程序
+应用案例 - 1~100求和 / 判断素数 / 猜数字游戏 / 打印九九表 / 打印三角形图案 / 猴子吃桃 / 百钱百鸡
+
+Day05 - 总结和练习
+
+基础练习 - 水仙花数 / 完美数 / 五人分鱼 / Fibonacci数列 / 回文素数
+综合练习 - Craps赌博游戏
+
+Day06 - 函数和模块的使用
+
+函数的作用 - 代码的坏味道 / 用函数封装功能模块
+定义函数 - def语句 / 函数名 / 参数列表 / return语句 / 调用自定义函数
+调用函数 - Python内置函数 /  导入模块和函数
+函数的参数 - 默认参数 / 可变参数 / 关键字参数 / 命名关键字参数
+函数的返回值 - 没有返回值  / 返回单个值 / 返回多个值
+作用域问题 - 局部作用域 / 嵌套作用域 / 全局作用域 / 内置作用域 / 和作用域相关的关键字
+用模块管理函数 - 模块的概念 / 用自定义模块管理函数 / 命名冲突的时候会怎样（同一个模块和不同的模块）
+
+Day07 - 字符串和常用数据结构
+
+字符串的使用 - 计算长度 / 下标运算 / 切片 / 常用方法
+列表基本用法 - 定义列表 / 用下表访问元素 / 下标越界 / 添加元素 / 删除元素 / 修改元素 / 切片 / 循环遍历
+列表常用操作 - 连接 / 复制(复制元素和复制数组) / 长度 / 排序 / 倒转 / 查找
+生成列表 - 使用range创建数字列表 / 生成表达式 / 生成器
+元组的使用 - 定义元组 / 使用元组中的值 / 修改元组变量 / 元组和列表转换
+集合基本用法 - 集合和列表的区别 /  创建集合 / 添加元素 / 删除元素 /  清空
+集合常用操作 - 交集 / 并集 / 差集 / 对称差 / 子集 / 超集
+字典的基本用法 - 字典的特点 / 创建字典 / 添加元素 / 删除元素 / 取值 / 清空
+字典常用操作 - keys()方法 / values()方法 / items()方法 / setdefault()方法
+基础练习 - 跑马灯效果 / 列表找最大元素 / 统计考试成绩的平均分 / Fibonacci数列 / 杨辉三角
+综合案例 - 双色球选号 / 井字棋
+
+Day08 - 面向对象编程基础
+
+类和对象 - 什么是类 / 什么是对象 / 面向对象其他相关概念
+定义类 - 基本结构 / 属性和方法 / 构造器 / 析构器 / __str__方法
+使用对象 - 创建对象 / 给对象发消息
+面向对象的四大支柱 - 抽象 / 封装 / 继承 / 多态
+基础练习 - 定义学生类 / 定义时钟类 / 定义图形类 / 定义汽车类
+
+Day09 - 面向对象进阶
+
+属性 - 类属性 / 实例属性 / 属性访问器 / 属性修改器 / 属性删除器 / 使用__slots__
+类中的方法 - 实例方法 / 类方法 / 静态方法
+运算符重载 - __add__ / __sub__ / __or__ /__getitem__ / __setitem__ / __len__ / __repr__ / __gt__ / __lt__ / __le__ / __ge__ / __eq__ / __ne__ / __contains__
+类(的对象)之间的关系 - 关联 / 继承 / 依赖
+继承和多态 - 什么是继承 / 继承的语法 / 调用父类方法 / 方法重写 / 类型判定 / 多重继承 / 菱形继承(钻石继承)和C3算法
+综合案例 - 工资结算系统 / 图书自动折扣系统 / 自定义分数类
+
+Day10 - 图形用户界面和游戏开发
+
+使用tkinter开发GUI
+使用pygame三方库开发游戏应用
+“大球吃小球”游戏
+
+Day11 - 文件和异常
+
+读文件 - 读取整个文件 / 逐行读取 / 文件路径
+写文件 - 覆盖写入 / 追加写入 / 文本文件 / 二进制文件
+异常处理 - 异常机制的重要性 / try-except代码块 / else代码块 / finally代码块 / 内置异常类型 / 异常栈 / raise语句
+数据持久化 - CSV文件概述 / csv模块的应用 / JSON数据格式 / json模块的应用
+综合案例 - 歌词解析
+
+Day12 - 字符串和正则表达式
+
+字符串高级操作 - 转义字符 \ 原始字符串 \ 多行字符串 \ in和 not in运算符 \ is开头的方法 \ join和split方法 \ strip相关方法 \ pyperclip模块 \ 不变字符串和可变字符串 \ StringIO的使用
+正则表达式入门 - 正则表达式的作用 \ 元字符 \ 转义 \ 量词 \ 分组 \ 零宽断言 \贪婪匹配与惰性匹配懒惰 \ 使用re模块实现正则表达式操作（匹配、搜索、替换、捕获）
+使用正则表达式 - re模块 \ compile函数 \ group和groups方法 \ match方法 \ search方法 \ findall和finditer方法 \ sub和subn方法 \ split方法
+应用案例 - 使用正则表达式验证输入的字符串
+
+Day13 - 进程和线程
+
+进程和线程的概念 - 什么是进程 / 什么是线程 / 多线程的应用场景
+使用进程 - fork函数 / multiprocessing模块 / 进程池 / 进程间通信
+使用线程 - thread模块 / threading模块 / Thread类 / Lock类 / Condition类 / 线程池
+
+Day14-A - 网络编程入门
+
+计算机网络基础 - 计算机网络发展史 / “TCP-IP”模型 / IP地址 / 端口 / 协议 / 其他相关概念
+网络应用架构 - “客户端-服务器”架构 / “浏览器-服务器”架构
+Python网络编程 - 套接字的概念 / socket模块 /  socket函数 / 创建TCP服务器 / 创建TCP客户端 / 创建UDP服务器 / 创建UDP客户端 / SocketServer模块
+
+Day14-B - 网络应用开发
+
+访问网络API - 网络API概述 / 访问URL / requests模块 / 解析JSON格式数据
+文件传输 - FTP协议 / ftplib模块 / 交互式FTP应用
+电子邮件 - SMTP协议 / POP3协议 / IMAP协议 / smtplib模块 / poplib模块 / imaplib模块
+短信服务 - twilio模块 / 国内的短信服务
+
+Day15 - 图像和文档处理
+
+用Pillow处理图片 - 图片读写 / 图片合成 / 几何变换 / 色彩转换 / 滤镜效果
+读写Word文档 - 文本内容的处理 / 段落 / 页眉和页脚 / 样式的处理
+读写Excel文件 - xlrd模块 / xlwt模块
+生成PDF文件 - pypdf2模块 / reportlab模块
+
+Day16~Day20 - Python语言进阶 
+
+常用数据结构
+函数的高级用法 - “一等公民” / 高阶函数 / Lambda函数 / 作用域和闭包 / 装饰器
+面向对象高级知识 - “三大支柱” / 类与类之间的关系 / 垃圾回收 / 魔术属性和方法 / 混入 / 元类 / 面向对象设计原则 / GoF设计模式
+迭代器和生成器 - 相关魔术方法 / 创建生成器的两种方式 /
+并发和异步编程 - 多线程 / 多进程 / 异步IO / async和await
+
+Day21~30 - Web前端入门
+
+用HTML标签承载页面内容
+用CSS渲染页面
+用JavaScript处理交互式行为
+jQuery入门和提高
+Vue.js入门
+Element的使用
+Bootstrap的使用
+
+Day31~35 - 玩转Linux操作系统
+
+操作系统发展史和Linux概述
+Linux基础命令
+Linux中的实用程序
+Linux的文件系统
+Vim编辑器的应用
+环境变量和Shell编程
+软件的安装和服务的配置
+网络访问和管理
+其他相关内容
+
+Day36~40 - 数据库基础和进阶
+
+关系型数据库MySQL
+
+关系型数据库概述
+MySQL的安装和使用
+SQL的使用
+
+DDL - 数据定义语言 - create / drop / alter
+DML - 数据操作语言 - insert / delete / update / select
+DCL - 数据控制语言 - grant / revoke
+
+
+相关知识
+
+范式理论 - 设计二维表的指导思想
+数据完整性
+数据一致性
+
+
+在Python中操作MySQL
+
+
+NoSQL入门
+
+NoSQL概述
+Redis概述
+Mongo概述
+
+
+
+Day41~55 - 实战Django
+Day41 - 快速上手
+
+Web应用工作原理和HTTP协议
+Django框架概述
+5分钟快速上手
+使用视图模板
+
+Day42 - 深入模型
+
+关系型数据库配置
+管理后台的使用
+使用ORM完成对模型的CRUD操作
+Django模型最佳实践
+模型定义参考
+
+Day43 - 静态资源和Ajax请求
+
+加载静态资源
+用Ajax请求获取数据
+
+Day44 - 表单的应用
+Day45 - Cookie和Session
+Day46 - 中间件的应用
+Day47 - 日志和缓存
+Day48 - 文件上传和富文本编辑
+Day49 - 文件下载和报表
+Day50 - RESTful架构和DRF入门
+Day51 - RESTful架构和DRF进阶
+Day52 - 使用缓存
+Day53 - 短信和邮件
+Day54 - 异步任务和定时任务
+Day55 - 单元测试和项目上线
+
+项目开发流程和相关工具
+生成非HTML内容
+项目部署和测试
+项目性能初步调优
+Web应用安全保护
+
+Day56~60 - 实战Flask
+Day56 - Flask入门
+Day57 - 模板的使用
+Day58 - 表单的处理
+Day59 - 数据库操作
+Day60 - 项目实战
+Day61~65 - 实战Tornado
+Day61 - 预备知识
+
+并发编程
+I/O模式和事件驱动
+
+Day62 - Tornado入门
+
+Tornado概述
+5分钟上手Tornado
+路由解析
+请求处理器
+
+Day63 - 异步化
+
+aiomysql和aioredis的使用
+
+Day64 - WebSocket的应用
+
+WebSocket简介
+WebSocket服务器端编程
+WebSocket客户端编程
+项目：Web聊天室
+
+Day65 - 项目实战
+
+前后端分离开发和接口文档的撰写
+使用Vue.js实现前端渲染
+使用ECharts实现报表功能
+使用WebSocket实现推送服务
+
+Day66~75 - 爬虫开发
+Day66 - 网络爬虫和相关工具
+Day67 - 数据采集和解析
+Day68 - 存储数据
+Day69 - 并发下载
+Day70 - 解析动态内容
+Day71 - 表单交互和验证码处理
+Day72 - Scrapy入门
+Day73 - Scrapy高级应用
+Day74 - Scrapy分布式实现
+Day75 - 爬虫项目实战
+Day76~90 - 数据处理和机器学习
+Day76 - 机器学习基础
+Day77 - Pandas的应用
+Day78 - NumPy和SciPy的应用
+Day79 - Matplotlib和数据可视化
+Day80 - k最近邻(KNN)分类
+Day81 - 决策树
+Day82 - 贝叶斯分类
+Day83 - 支持向量机(SVM)
+Day84 - K-均值聚类
+Day85 - 回归分析
+Day86 - 大数据分析入门
+Day87 - 大数据分析进阶
+Day88 - Tensorflow入门
+Day89 - Tensorflow实战
+Day90 - 推荐系统
+Day91~100 - 团队项目开发
+第91天：团队开发和项目选题
+
+
+软件过程模型
+
+
+经典过程模型（瀑布模型）
+
+可行性分析（研究做还是不做），输出《可行性分析报告》。
+需求分析（研究做什么），输出《需求规格说明书》和产品界面原型图。
+概要设计和详细设计，输出概念模型图、物理模型图、类图、时序图等。
+编码 / 测试。
+上线 / 维护。
+
+
+
+敏捷开发（Scrum）- 产品所有者、Scrum Master、研发人员 - Sprint
+
+产品的Backlog（用户故事、产品原型）。
+计划会议（评估和预算）。
+日常开发（站立会议、番茄工作法、结对编程、测试先行、代码重构……）。
+修复bug（问题描述、重现步骤、测试人员、被指派人）。
+评审会议（Showcase）。
+回顾会议（当前周期做得好和不好的地方）。
+
+
+补充：敏捷软件开发宣言
+
+个体和互动 高于 流程和工具
+工作的软件 高于 详尽的文档
+客户合作 高于 合同谈判
+响应变化 高于 遵循计划
+
+
+
+
+
+
+角色：产品所有者（决定做什么，能对需求拍板的人）、团队负责人（解决各种问题，专注如何更好的工作，屏蔽外部对开发团队的影响）、开发团队（项目执行人员，具体指开发人员和测试人员）。
+准备工作：商业案例和资金、合同、憧憬、初始产品需求、初始发布计划、入股、组建团队。
+敏捷团队通常人数为8-10人。
+工作量估算：将开发任务量化，包括原型、Logo设计、UI设计、前端开发等，尽量把每个工作分解到最小任务量，最小任务量标准为工作时间不能超过两天，然后估算总体项目时间。把每个任务都贴在白板上面，白板上分三部分：to do（待完成）、in progress（进行中）和done（已完成）。
+
+
+
+项目团队组建
+
+
+团队的构成和角色
+
+说明：谢谢付祥英女士绘制了下面这张精美的公司组织架构图。
+
+
+
+
+编程规范和代码审查（flake8、pylint）
+
+
+
+Python中的一些“惯例”（请参考《Python惯例-如何编写Pythonic的代码》）
+
+
+影响代码可读性的原因：
+
+代码注释太少或者没有注释
+代码破坏了语言的最佳实践
+反模式编程（意大利面代码、复制-黏贴编程、自负编程、……）
+
+
+
+
+
+团队开发工具介绍
+
+版本控制：Git、Mercury
+缺陷管理：Gitlab、Redmine
+敏捷闭环工具：禅道、JIRA
+持续集成：Jenkins、Travis-CI
+
+请参考《团队项目开发》。
+
+
+项目选题和理解业务
+
+
+选题范围设定
+
+
+CMS（用户端）：新闻聚合网站、问答/分享社区、影评/书评网站等。
+
+
+MIS（用户端+管理端）：KMS、KPI考核系统、HRS、CRM系统、供应链系统、仓储管理系统等。
+
+
+App后台（管理端+数据接口）：二手交易类、报刊杂志类、小众电商类、新闻资讯类、旅游类、社交类、阅读类等。
+
+
+其他类型：自身行业背景和工作经验、业务容易理解和把控。
+
+
+
+
+需求理解、模块划分和任务分配
+
+需求理解：头脑风暴和竞品分析。
+模块划分：画思维导图（XMind），每个模块是一个枝节点，每个具体的功能是一个叶节点（用动词表述），需要确保每个叶节点无法再生出新节点，确定每个叶子节点的重要性、优先级和工作量。
+任务分配：由项目负责人根据上面的指标为每个团队成员分配任务。
+
+
+
+
+制定项目进度表（每日更新）
+
+
+
+模块
+功能
+人员
+状态
+完成
+工时
+计划开始
+实际开始
+计划结束
+实际结束
+备注
+
+
+
+
+评论
+添加评论
+王大锤
+正在进行
+50%
+4
+2018/8/7
+
+2018/8/7
+
+
+
+
+
+删除评论
+王大锤
+等待
+0%
+2
+2018/8/7
+
+2018/8/7
+
+
+
+
+
+查看评论
+白元芳
+正在进行
+20%
+4
+2018/8/7
+
+2018/8/7
+
+需要进行代码审查
+
+
+
+评论投票
+白元芳
+等待
+0%
+4
+2018/8/8
+
+2018/8/8
+
+
+
+
+
+
+
+第92天：数据库设计和OOAD
+概念模型和正向工程
+
+
+UML（统一建模语言）的类图
+
+
+
+通过模型创建表（正向工程）
+python manage.py makemigrations app
+python manage.py migrate
+
+
+物理模型和反向工程
+
+
+PowerDesigner
+
+
+
+通过数据表创建模型（反向工程）
+python manage.py inspectdb > app/models.py
+
+
+第93-98天：使用Django开发项目
+
+说明：具体内容请参考《Django知识点概述》
+
+项目开发中的公共问题
+
+数据库的配置（多数据库、主从复制、数据库路由）
+缓存的配置（分区缓存、键设置、超时设置、主从复制、故障恢复（哨兵））
+日志的配置
+分析和调试（Django-Debug-ToolBar）
+好用的Python模块（日期计算、图像处理、数据加密、三方API）
+
+REST API设计
+
+RESTful架构
+
+理解RESTful架构
+RESTful API设计指南
+RESTful API最佳实践
+
+
+API接口文档的撰写（《网络API接口设计》）
+
+RAP2
+YAPI
+
+
+django-REST-framework的应用
+
+项目中的重点难点剖析
+
+使用缓存缓解数据库压力 - Redis
+使用消息队列做解耦合和削峰 - Celery + RabbitMQ
+
+第99-100天：测试和部署
+单元测试
+
+测试的种类
+编写单元测试（unittest、pytest、nose2、tox、ddt、……）
+测试覆盖率（coverage）
+
+项目部署
+
+说明：请参考《项目部署上线指南》。
+
+
+部署前的准备工作
+
+关键设置（SECRET_KEY / DEBUG / ALLOWED_HOSTS / 缓存 / 数据库）
+HTTPS / CSRF_COOKIE_SECUR  / SESSION_COOKIE_SECURE
+日志相关配置
+
+
+Linux常用命令回顾
+Linux常用服务的安装和配置
+uWSGI/Gunicorn和Nginx的使用
+
+Gunicorn和uWSGI的比较
+
+对于不需要大量定制化的简单应用程序，Gunicorn是一个不错的选择，uWSGI的学习曲线比Gunicorn要陡峭得多，Gunicorn的默认参数就已经能够适应大多数应用程序。
+uWSGI支持异构部署。
+由于Nginx本身支持uWSGI，在线上一般都将Nginx和uWSGI捆绑在一起部署，而且uWSGI属于功能齐全且高度定制的WSGI中间件。
+在性能上，Gunicorn和uWSGI其实表现相当。
+
+
+
+
+虚拟化技术（Docker）
+
+性能测试
+
+说明：具体内容请参考《Django知识点概述》。
+
+
+AB的使用
+SQLslap的使用
+sysbench的使用
+
+自动化测试
+
+使用Shell和Python进行自动化测试
+使用Selenium实现自动化测试
+
+Selenium IDE
+Selenium WebDriver
+Selenium Remote Control
+
+
+测试工具Robot Framework介绍
+
+项目性能调优
+
+
+数据库性能调优 - 请参考《MySQL相关知识》
+
+
+软硬件优化
+
+
+SQL优化
+
+
+架构优化
+
+
+分表分库
+
+
+主从复制，读写分离
+
+
+集群架构
+
+
+
+
+
+
+Web服务器性能优化
+
+
+Nginx负载均衡配置
+
+
+Keepalived实现高可用
+
+
+
+
+代码性能调优
+
+多线程
+异步化
+
+
+
+静态资源访问优化
+
+云存储
+CDN
+
+
+
+
+致谢：感谢的我的同事古晔、张旭、肖世荣、王海飞、荣佳伟、路丰坤等在技术上给予的指导和帮助。
+
+
+",HTML
+"
+
+
+
+
+pandas: powerful Python data analysis toolkit
+
+  
+
+Latest Release
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Package Status
+
+
+
+
+
+
+
+License
+
+
+
+
+
+
+
+Build Status
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Coverage
+
+
+
+
+
+
+Downloads
+
+
+
+
+
+
+
+Gitter
+
+
+
+
+
+
+
+What is it?
+pandas is a Python package providing fast, flexible, and expressive data
+structures designed to make working with ""relational"" or ""labeled"" data both
+easy and intuitive. It aims to be the fundamental high-level building block for
+doing practical, real world data analysis in Python. Additionally, it has
+the broader goal of becoming the most powerful and flexible open source data
+analysis / manipulation tool available in any language. It is already well on
+its way towards this goal.
+Main Features
+Here are just a few of the things that pandas does well:
+
+Easy handling of missing data (represented as
+NaN) in floating point as well as non-floating point data
+Size mutability: columns can be inserted and
+deleted from DataFrame and higher dimensional
+objects
+Automatic and explicit data alignment: objects can
+be explicitly aligned to a set of labels, or the user can simply
+ignore the labels and let Series, DataFrame, etc. automatically
+align the data for you in computations
+Powerful, flexible group by functionality to perform
+split-apply-combine operations on data sets, for both aggregating
+and transforming data
+Make it easy to convert ragged,
+differently-indexed data in other Python and NumPy data structures
+into DataFrame objects
+Intelligent label-based slicing, fancy
+indexing, and subsetting of
+large data sets
+Intuitive merging and joining data
+sets
+Flexible reshaping and pivoting of
+data sets
+Hierarchical labeling of axes (possible to have multiple
+labels per tick)
+Robust IO tools for loading data from flat files
+(CSV and delimited), Excel files, databases,
+and saving/loading data from the ultrafast HDF5 format
+Time series-specific functionality: date range
+generation and frequency conversion, moving window statistics,
+moving window linear regressions, date shifting and lagging, etc.
+
+Where to get it
+The source code is currently hosted on GitHub at:
+https://github.com/pandas-dev/pandas
+Binary installers for the latest released version are available at the Python
+package index and on conda.
+# conda
+conda install pandas
+# or PyPI
+pip install pandas
+Dependencies
+
+NumPy: 1.13.3 or higher
+python-dateutil: 2.5.0 or higher
+pytz: 2015.4 or higher
+
+See the full installation instructions
+for recommended and optional dependencies.
+Installation from sources
+To install pandas from source you need Cython in addition to the normal
+dependencies above. Cython can be installed from pypi:
+pip install cython
+In the pandas directory (same one where you found this file after
+cloning the git repo), execute:
+python setup.py install
+or for installing in development mode:
+python setup.py develop
+Alternatively, you can use pip if you want all the dependencies pulled
+in automatically (the -e option is for installing it in development
+mode):
+pip install -e .
+See the full instructions for installing from source.
+License
+BSD 3
+Documentation
+The official documentation is hosted on PyData.org: https://pandas.pydata.org/pandas-docs/stable
+Background
+Work on pandas started at AQR (a quantitative hedge fund) in 2008 and
+has been under active development since then.
+Getting Help
+For usage questions, the best place to go to is StackOverflow.
+Further, general questions and discussions can also take place on the pydata mailing list.
+Discussion and Development
+Most development discussion is taking place on github in this repo. Further, the pandas-dev mailing list can also be used for specialized discussions or design issues, and a Gitter channel is available for quick development related questions.
+Contributing to pandas 
+All contributions, bug reports, bug fixes, documentation improvements, enhancements and ideas are welcome.
+A detailed overview on how to contribute can be found in the contributing guide. There is also an overview on GitHub.
+If you are simply looking to start working with the pandas codebase, navigate to the GitHub ""issues"" tab and start looking through interesting issues. There are a number of issues listed under Docs and good first issue where you could start out.
+You can also triage issues which may include reproducing bug reports, or asking for vital information such as version numbers or reproduction instructions. If you would like to start triaging issues, one easy way to get started is to subscribe to pandas on CodeTriage.
+Or maybe through using pandas you have an idea of your own or are looking for something in the documentation and thinking ‘this can be improved’...you can do something about it!
+Feel free to ask questions on the mailing list or on Gitter.
+
+",Python
+"
+
+Darknet
+Darknet is an open source neural network framework written in C and CUDA. It is fast, easy to install, and supports CPU and GPU computation.
+For more information see the Darknet project website.
+For questions or issues please use the Google Group.
+
+",C
+"
+XX-Net
+中文文档      English      فارسی صفحه اصلی
+
+易用的翻墙工具
+包含的GAE_proxy和X-Tunnel：
+
+
+
+
+模块
+GAE_proxy
+X-Tunnel
+
+
+
+
+联通性
+依赖IPv6
+更多通道
+
+
+速度
+流畅
+下载快速，稍微延迟
+
+
+安全性
+Google可看到通信内容
+支持完整https加密
+
+
+易用
+需开启Ipv6，部署服务端，导入证书
+简单
+
+
+兼容性
+部分网站不支持
+无问题
+
+
+收费
+免费
+付费
+
+
+
+
+下载页面
+
+最新状态：
+2018-12-20
+
+
+Google 更新服务器策略，请更新到3.13.1 及以上。
+
+
+GAE_Proxy 请开启IPv6，参考:
+如何开启IPv6
+
+
+
+提示：
+
+有问题请先看Wiki文档
+提问前，请先看最近讨论主题，避免重复发问。
+
+
+",Python
+"
+Python - 100天从新手到大师
+
+作者：骆昊
+
+Python应用领域和就业形势分析
+简单的说，Python是一个“优雅”、“明确”、“简单”的编程语言。
+
+学习曲线低，非专业人士也能上手
+开源系统，拥有强大的生态圈
+解释型语言，完美的平台可移植性
+支持面向对象和函数式编程
+能够通过调用C/C++代码扩展功能
+代码规范程度高，可读性强
+
+目前几个比较流行的领域，Python都有用武之地。
+
+云基础设施 - Python / Java / Go
+DevOps - Python / Shell / Ruby / Go
+网络爬虫 - Python / PHP / C++
+数据分析挖掘 - Python / R / Scala / Matlab
+机器学习 - Python / R / Java / Lisp
+
+作为一名Python开发者，主要的就业领域包括：
+
+Python服务器后台开发 / 游戏服务器开发 / 数据接口开发工程师
+Python自动化运维工程师
+Python数据分析 / 数据可视化 / 大数据工程师
+Python爬虫工程师
+Python聊天机器人开发 / 图像识别和视觉算法 / 深度学习工程师
+
+下图显示了主要城市Python招聘需求量及薪资待遇排行榜（截止到2018年5月）。
+
+
+
+给初学者的几个建议：
+
+Make English as your working language.
+Practice makes perfect.
+All experience comes from mistakes.
+Don't be one of the leeches.
+Either stand out or kicked out.
+
+Day01~15 - Python语言基础
+Day01 - 初识Python
+
+Python简介 - Python的历史 / Python的优缺点 / Python的应用领域
+搭建编程环境 - Windows环境 / Linux环境 / MacOS环境
+从终端运行Python程序 - DOS命令 / Hello, world / print函数 / 运行程序
+使用IDLE - 交互式环境(REPL) / 编写多行代码 / 运行程序 / 退出IDLE
+注释 - 注释的作用 / 单行注释 / 多行注释
+
+Day02 - 语言元素
+
+程序和进制 - 指令和程序 / 冯诺依曼机 / 二进制和十进制 / 八进制和十六进制
+变量和类型 - 变量的命名 / 变量的使用 / input函数 / 检查变量类型 / 类型转换
+数字和字符串 - 整数 / 浮点数 / 复数 / 字符串 / 字符串基本操作 / 字符编码
+运算符 - 数学运算符 / 赋值运算符 / 比较运算符 / 逻辑运算符 / 身份运算符 / 运算符的优先级
+应用案例 - 华氏温度转换成摄氏温度 / 输入圆的半径计算周长和面积 / 输入年份判断是否是闰年
+
+Day03 - 分支结构
+
+分支结构的应用场景 - 条件 / 缩进 / 代码块 / 流程图
+if语句 - 简单的if / if-else结构 / if-elif-else结构 / 嵌套的if
+应用案例 - 用户身份验证 / 英制单位与公制单位互换 / 掷骰子决定做什么 / 百分制成绩转等级制 / 分段函数求值 / 输入三条边的长度如果能构成三角形就计算周长和面积
+
+Day04 - 循环结构
+
+循环结构的应用场景 - 条件 / 缩进 / 代码块 / 流程图
+while循环 - 基本结构 / break语句 / continue语句
+for循环 - 基本结构 / range类型 / 循环中的分支结构 / 嵌套的循环 / 提前结束程序
+应用案例 - 1~100求和 / 判断素数 / 猜数字游戏 / 打印九九表 / 打印三角形图案 / 猴子吃桃 / 百钱百鸡
+
+Day05 - 总结和练习
+
+基础练习 - 水仙花数 / 完美数 / 五人分鱼 / Fibonacci数列 / 回文素数
+综合练习 - Craps赌博游戏
+
+Day06 - 函数和模块的使用
+
+函数的作用 - 代码的坏味道 / 用函数封装功能模块
+定义函数 - def语句 / 函数名 / 参数列表 / return语句 / 调用自定义函数
+调用函数 - Python内置函数 /  导入模块和函数
+函数的参数 - 默认参数 / 可变参数 / 关键字参数 / 命名关键字参数
+函数的返回值 - 没有返回值  / 返回单个值 / 返回多个值
+作用域问题 - 局部作用域 / 嵌套作用域 / 全局作用域 / 内置作用域 / 和作用域相关的关键字
+用模块管理函数 - 模块的概念 / 用自定义模块管理函数 / 命名冲突的时候会怎样（同一个模块和不同的模块）
+
+Day07 - 字符串和常用数据结构
+
+字符串的使用 - 计算长度 / 下标运算 / 切片 / 常用方法
+列表基本用法 - 定义列表 / 用下表访问元素 / 下标越界 / 添加元素 / 删除元素 / 修改元素 / 切片 / 循环遍历
+列表常用操作 - 连接 / 复制(复制元素和复制数组) / 长度 / 排序 / 倒转 / 查找
+生成列表 - 使用range创建数字列表 / 生成表达式 / 生成器
+元组的使用 - 定义元组 / 使用元组中的值 / 修改元组变量 / 元组和列表转换
+集合基本用法 - 集合和列表的区别 /  创建集合 / 添加元素 / 删除元素 /  清空
+集合常用操作 - 交集 / 并集 / 差集 / 对称差 / 子集 / 超集
+字典的基本用法 - 字典的特点 / 创建字典 / 添加元素 / 删除元素 / 取值 / 清空
+字典常用操作 - keys()方法 / values()方法 / items()方法 / setdefault()方法
+基础练习 - 跑马灯效果 / 列表找最大元素 / 统计考试成绩的平均分 / Fibonacci数列 / 杨辉三角
+综合案例 - 双色球选号 / 井字棋
+
+Day08 - 面向对象编程基础
+
+类和对象 - 什么是类 / 什么是对象 / 面向对象其他相关概念
+定义类 - 基本结构 / 属性和方法 / 构造器 / 析构器 / __str__方法
+使用对象 - 创建对象 / 给对象发消息
+面向对象的四大支柱 - 抽象 / 封装 / 继承 / 多态
+基础练习 - 定义学生类 / 定义时钟类 / 定义图形类 / 定义汽车类
+
+Day09 - 面向对象进阶
+
+属性 - 类属性 / 实例属性 / 属性访问器 / 属性修改器 / 属性删除器 / 使用__slots__
+类中的方法 - 实例方法 / 类方法 / 静态方法
+运算符重载 - __add__ / __sub__ / __or__ /__getitem__ / __setitem__ / __len__ / __repr__ / __gt__ / __lt__ / __le__ / __ge__ / __eq__ / __ne__ / __contains__
+类(的对象)之间的关系 - 关联 / 继承 / 依赖
+继承和多态 - 什么是继承 / 继承的语法 / 调用父类方法 / 方法重写 / 类型判定 / 多重继承 / 菱形继承(钻石继承)和C3算法
+综合案例 - 工资结算系统 / 图书自动折扣系统 / 自定义分数类
+
+Day10 - 图形用户界面和游戏开发
+
+使用tkinter开发GUI
+使用pygame三方库开发游戏应用
+“大球吃小球”游戏
+
+Day11 - 文件和异常
+
+读文件 - 读取整个文件 / 逐行读取 / 文件路径
+写文件 - 覆盖写入 / 追加写入 / 文本文件 / 二进制文件
+异常处理 - 异常机制的重要性 / try-except代码块 / else代码块 / finally代码块 / 内置异常类型 / 异常栈 / raise语句
+数据持久化 - CSV文件概述 / csv模块的应用 / JSON数据格式 / json模块的应用
+综合案例 - 歌词解析
+
+Day12 - 字符串和正则表达式
+
+字符串高级操作 - 转义字符 \ 原始字符串 \ 多行字符串 \ in和 not in运算符 \ is开头的方法 \ join和split方法 \ strip相关方法 \ pyperclip模块 \ 不变字符串和可变字符串 \ StringIO的使用
+正则表达式入门 - 正则表达式的作用 \ 元字符 \ 转义 \ 量词 \ 分组 \ 零宽断言 \贪婪匹配与惰性匹配懒惰 \ 使用re模块实现正则表达式操作（匹配、搜索、替换、捕获）
+使用正则表达式 - re模块 \ compile函数 \ group和groups方法 \ match方法 \ search方法 \ findall和finditer方法 \ sub和subn方法 \ split方法
+应用案例 - 使用正则表达式验证输入的字符串
+
+Day13 - 进程和线程
+
+进程和线程的概念 - 什么是进程 / 什么是线程 / 多线程的应用场景
+使用进程 - fork函数 / multiprocessing模块 / 进程池 / 进程间通信
+使用线程 - thread模块 / threading模块 / Thread类 / Lock类 / Condition类 / 线程池
+
+Day14-A - 网络编程入门
+
+计算机网络基础 - 计算机网络发展史 / “TCP-IP”模型 / IP地址 / 端口 / 协议 / 其他相关概念
+网络应用架构 - “客户端-服务器”架构 / “浏览器-服务器”架构
+Python网络编程 - 套接字的概念 / socket模块 /  socket函数 / 创建TCP服务器 / 创建TCP客户端 / 创建UDP服务器 / 创建UDP客户端 / SocketServer模块
+
+Day14-B - 网络应用开发
+
+访问网络API - 网络API概述 / 访问URL / requests模块 / 解析JSON格式数据
+文件传输 - FTP协议 / ftplib模块 / 交互式FTP应用
+电子邮件 - SMTP协议 / POP3协议 / IMAP协议 / smtplib模块 / poplib模块 / imaplib模块
+短信服务 - twilio模块 / 国内的短信服务
+
+Day15 - 图像和文档处理
+
+用Pillow处理图片 - 图片读写 / 图片合成 / 几何变换 / 色彩转换 / 滤镜效果
+读写Word文档 - 文本内容的处理 / 段落 / 页眉和页脚 / 样式的处理
+读写Excel文件 - xlrd模块 / xlwt模块
+生成PDF文件 - pypdf2模块 / reportlab模块
+
+Day16~Day20 - Python语言进阶 
+
+常用数据结构
+函数的高级用法 - “一等公民” / 高阶函数 / Lambda函数 / 作用域和闭包 / 装饰器
+面向对象高级知识 - “三大支柱” / 类与类之间的关系 / 垃圾回收 / 魔术属性和方法 / 混入 / 元类 / 面向对象设计原则 / GoF设计模式
+迭代器和生成器 - 相关魔术方法 / 创建生成器的两种方式 /
+并发和异步编程 - 多线程 / 多进程 / 异步IO / async和await
+
+Day21~30 - Web前端入门
+
+用HTML标签承载页面内容
+用CSS渲染页面
+用JavaScript处理交互式行为
+jQuery入门和提高
+Vue.js入门
+Element的使用
+Bootstrap的使用
+
+Day31~35 - 玩转Linux操作系统
+
+操作系统发展史和Linux概述
+Linux基础命令
+Linux中的实用程序
+Linux的文件系统
+Vim编辑器的应用
+环境变量和Shell编程
+软件的安装和服务的配置
+网络访问和管理
+其他相关内容
+
+Day36~40 - 数据库基础和进阶
+
+关系型数据库MySQL
+
+关系型数据库概述
+MySQL的安装和使用
+SQL的使用
+
+DDL - 数据定义语言 - create / drop / alter
+DML - 数据操作语言 - insert / delete / update / select
+DCL - 数据控制语言 - grant / revoke
+
+
+相关知识
+
+范式理论 - 设计二维表的指导思想
+数据完整性
+数据一致性
+
+
+在Python中操作MySQL
+
+
+NoSQL入门
+
+NoSQL概述
+Redis概述
+Mongo概述
+
+
+
+Day41~55 - 实战Django
+Day41 - 快速上手
+
+Web应用工作原理和HTTP协议
+Django框架概述
+5分钟快速上手
+使用视图模板
+
+Day42 - 深入模型
+
+关系型数据库配置
+管理后台的使用
+使用ORM完成对模型的CRUD操作
+Django模型最佳实践
+模型定义参考
+
+Day43 - 静态资源和Ajax请求
+
+加载静态资源
+用Ajax请求获取数据
+
+Day44 - 表单的应用
+Day45 - Cookie和Session
+Day46 - 中间件的应用
+Day47 - 日志和缓存
+Day48 - 文件上传和富文本编辑
+Day49 - 文件下载和报表
+Day50 - RESTful架构和DRF入门
+Day51 - RESTful架构和DRF进阶
+Day52 - 使用缓存
+Day53 - 短信和邮件
+Day54 - 异步任务和定时任务
+Day55 - 单元测试和项目上线
+
+项目开发流程和相关工具
+生成非HTML内容
+项目部署和测试
+项目性能初步调优
+Web应用安全保护
+
+Day56~60 - 实战Flask
+Day56 - Flask入门
+Day57 - 模板的使用
+Day58 - 表单的处理
+Day59 - 数据库操作
+Day60 - 项目实战
+Day61~65 - 实战Tornado
+Day61 - 预备知识
+
+并发编程
+I/O模式和事件驱动
+
+Day62 - Tornado入门
+
+Tornado概述
+5分钟上手Tornado
+路由解析
+请求处理器
+
+Day63 - 异步化
+
+aiomysql和aioredis的使用
+
+Day64 - WebSocket的应用
+
+WebSocket简介
+WebSocket服务器端编程
+WebSocket客户端编程
+项目：Web聊天室
+
+Day65 - 项目实战
+
+前后端分离开发和接口文档的撰写
+使用Vue.js实现前端渲染
+使用ECharts实现报表功能
+使用WebSocket实现推送服务
+
+Day66~75 - 爬虫开发
+Day66 - 网络爬虫和相关工具
+Day67 - 数据采集和解析
+Day68 - 存储数据
+Day69 - 并发下载
+Day70 - 解析动态内容
+Day71 - 表单交互和验证码处理
+Day72 - Scrapy入门
+Day73 - Scrapy高级应用
+Day74 - Scrapy分布式实现
+Day75 - 爬虫项目实战
+Day76~90 - 数据处理和机器学习
+Day76 - 机器学习基础
+Day77 - Pandas的应用
+Day78 - NumPy和SciPy的应用
+Day79 - Matplotlib和数据可视化
+Day80 - k最近邻(KNN)分类
+Day81 - 决策树
+Day82 - 贝叶斯分类
+Day83 - 支持向量机(SVM)
+Day84 - K-均值聚类
+Day85 - 回归分析
+Day86 - 大数据分析入门
+Day87 - 大数据分析进阶
+Day88 - Tensorflow入门
+Day89 - Tensorflow实战
+Day90 - 推荐系统
+Day91~100 - 团队项目开发
+第91天：团队开发和项目选题
+
+
+软件过程模型
+
+
+经典过程模型（瀑布模型）
+
+可行性分析（研究做还是不做），输出《可行性分析报告》。
+需求分析（研究做什么），输出《需求规格说明书》和产品界面原型图。
+概要设计和详细设计，输出概念模型图、物理模型图、类图、时序图等。
+编码 / 测试。
+上线 / 维护。
+
+
+
+敏捷开发（Scrum）- 产品所有者、Scrum Master、研发人员 - Sprint
+
+产品的Backlog（用户故事、产品原型）。
+计划会议（评估和预算）。
+日常开发（站立会议、番茄工作法、结对编程、测试先行、代码重构……）。
+修复bug（问题描述、重现步骤、测试人员、被指派人）。
+评审会议（Showcase）。
+回顾会议（当前周期做得好和不好的地方）。
+
+
+补充：敏捷软件开发宣言
+
+个体和互动 高于 流程和工具
+工作的软件 高于 详尽的文档
+客户合作 高于 合同谈判
+响应变化 高于 遵循计划
+
+
+
+
+
+
+角色：产品所有者（决定做什么，能对需求拍板的人）、团队负责人（解决各种问题，专注如何更好的工作，屏蔽外部对开发团队的影响）、开发团队（项目执行人员，具体指开发人员和测试人员）。
+准备工作：商业案例和资金、合同、憧憬、初始产品需求、初始发布计划、入股、组建团队。
+敏捷团队通常人数为8-10人。
+工作量估算：将开发任务量化，包括原型、Logo设计、UI设计、前端开发等，尽量把每个工作分解到最小任务量，最小任务量标准为工作时间不能超过两天，然后估算总体项目时间。把每个任务都贴在白板上面，白板上分三部分：to do（待完成）、in progress（进行中）和done（已完成）。
+
+
+
+项目团队组建
+
+
+团队的构成和角色
+
+说明：谢谢付祥英女士绘制了下面这张精美的公司组织架构图。
+
+
+
+
+编程规范和代码审查（flake8、pylint）
+
+
+
+Python中的一些“惯例”（请参考《Python惯例-如何编写Pythonic的代码》）
+
+
+影响代码可读性的原因：
+
+代码注释太少或者没有注释
+代码破坏了语言的最佳实践
+反模式编程（意大利面代码、复制-黏贴编程、自负编程、……）
+
+
+
+
+
+团队开发工具介绍
+
+版本控制：Git、Mercury
+缺陷管理：Gitlab、Redmine
+敏捷闭环工具：禅道、JIRA
+持续集成：Jenkins、Travis-CI
+
+请参考《团队项目开发》。
+
+
+项目选题和理解业务
+
+
+选题范围设定
+
+
+CMS（用户端）：新闻聚合网站、问答/分享社区、影评/书评网站等。
+
+
+MIS（用户端+管理端）：KMS、KPI考核系统、HRS、CRM系统、供应链系统、仓储管理系统等。
+
+
+App后台（管理端+数据接口）：二手交易类、报刊杂志类、小众电商类、新闻资讯类、旅游类、社交类、阅读类等。
+
+
+其他类型：自身行业背景和工作经验、业务容易理解和把控。
+
+
+
+
+需求理解、模块划分和任务分配
+
+需求理解：头脑风暴和竞品分析。
+模块划分：画思维导图（XMind），每个模块是一个枝节点，每个具体的功能是一个叶节点（用动词表述），需要确保每个叶节点无法再生出新节点，确定每个叶子节点的重要性、优先级和工作量。
+任务分配：由项目负责人根据上面的指标为每个团队成员分配任务。
+
+
+
+
+制定项目进度表（每日更新）
+
+
+
+模块
+功能
+人员
+状态
+完成
+工时
+计划开始
+实际开始
+计划结束
+实际结束
+备注
+
+
+
+
+评论
+添加评论
+王大锤
+正在进行
+50%
+4
+2018/8/7
+
+2018/8/7
+
+
+
+
+
+删除评论
+王大锤
+等待
+0%
+2
+2018/8/7
+
+2018/8/7
+
+
+
+
+
+查看评论
+白元芳
+正在进行
+20%
+4
+2018/8/7
+
+2018/8/7
+
+需要进行代码审查
+
+
+
+评论投票
+白元芳
+等待
+0%
+4
+2018/8/8
+
+2018/8/8
+
+
+
+
+
+
+
+第92天：数据库设计和OOAD
+概念模型和正向工程
+
+
+UML（统一建模语言）的类图
+
+
+
+通过模型创建表（正向工程）
+python manage.py makemigrations app
+python manage.py migrate
+
+
+物理模型和反向工程
+
+
+PowerDesigner
+
+
+
+通过数据表创建模型（反向工程）
+python manage.py inspectdb > app/models.py
+
+
+第93-98天：使用Django开发项目
+
+说明：具体内容请参考《Django知识点概述》
+
+项目开发中的公共问题
+
+数据库的配置（多数据库、主从复制、数据库路由）
+缓存的配置（分区缓存、键设置、超时设置、主从复制、故障恢复（哨兵））
+日志的配置
+分析和调试（Django-Debug-ToolBar）
+好用的Python模块（日期计算、图像处理、数据加密、三方API）
+
+REST API设计
+
+RESTful架构
+
+理解RESTful架构
+RESTful API设计指南
+RESTful API最佳实践
+
+
+API接口文档的撰写（《网络API接口设计》）
+
+RAP2
+YAPI
+
+
+django-REST-framework的应用
+
+项目中的重点难点剖析
+
+使用缓存缓解数据库压力 - Redis
+使用消息队列做解耦合和削峰 - Celery + RabbitMQ
+
+第99-100天：测试和部署
+单元测试
+
+测试的种类
+编写单元测试（unittest、pytest、nose2、tox、ddt、……）
+测试覆盖率（coverage）
+
+项目部署
+
+说明：请参考《项目部署上线指南》。
+
+
+部署前的准备工作
+
+关键设置（SECRET_KEY / DEBUG / ALLOWED_HOSTS / 缓存 / 数据库）
+HTTPS / CSRF_COOKIE_SECUR  / SESSION_COOKIE_SECURE
+日志相关配置
+
+
+Linux常用命令回顾
+Linux常用服务的安装和配置
+uWSGI/Gunicorn和Nginx的使用
+
+Gunicorn和uWSGI的比较
+
+对于不需要大量定制化的简单应用程序，Gunicorn是一个不错的选择，uWSGI的学习曲线比Gunicorn要陡峭得多，Gunicorn的默认参数就已经能够适应大多数应用程序。
+uWSGI支持异构部署。
+由于Nginx本身支持uWSGI，在线上一般都将Nginx和uWSGI捆绑在一起部署，而且uWSGI属于功能齐全且高度定制的WSGI中间件。
+在性能上，Gunicorn和uWSGI其实表现相当。
+
+
+
+
+虚拟化技术（Docker）
+
+性能测试
+
+说明：具体内容请参考《Django知识点概述》。
+
+
+AB的使用
+SQLslap的使用
+sysbench的使用
+
+自动化测试
+
+使用Shell和Python进行自动化测试
+使用Selenium实现自动化测试
+
+Selenium IDE
+Selenium WebDriver
+Selenium Remote Control
+
+
+测试工具Robot Framework介绍
+
+项目性能调优
+
+
+数据库性能调优 - 请参考《MySQL相关知识》
+
+
+软硬件优化
+
+
+SQL优化
+
+
+架构优化
+
+
+分表分库
+
+
+主从复制，读写分离
+
+
+集群架构
+
+
+
+
+
+
+Web服务器性能优化
+
+
+Nginx负载均衡配置
+
+
+Keepalived实现高可用
+
+
+
+
+代码性能调优
+
+多线程
+异步化
+
+
+
+静态资源访问优化
+
+云存储
+CDN
+
+
+
+
+致谢：感谢的我的同事古晔、张旭、肖世荣、王海飞、荣佳伟、路丰坤等在技术上给予的指导和帮助。
+
+
+",HTML
+"
+Scrapy
+
+
+
+
+
+
+
+
+
+
+
+
+
+Overview
+Scrapy is a fast high-level web crawling and web scraping framework, used to
+crawl websites and extract structured data from their pages. It can be used for
+a wide range of purposes, from data mining to monitoring and automated testing.
+For more information including a list of features check the Scrapy homepage at:
+https://scrapy.org
+
+Requirements
+
+Python 2.7 or Python 3.4+
+Works on Linux, Windows, Mac OSX, BSD
+
+
+Install
+The quick way:
+pip install scrapy
+
+For more details see the install section in the documentation:
+https://docs.scrapy.org/en/latest/intro/install.html
+
+Documentation
+Documentation is available online at https://docs.scrapy.org/ and in the docs
+directory.
+
+Releases
+You can find release notes at https://docs.scrapy.org/en/latest/news.html
+
+Community (blog, twitter, mail list, IRC)
+See https://scrapy.org/community/
+
+Contributing
+See https://docs.scrapy.org/en/master/contributing.html
+
+Code of Conduct
+Please note that this project is released with a Contributor Code of Conduct
+(see https://github.com/scrapy/scrapy/blob/master/CODE_OF_CONDUCT.md).
+By participating in this project you agree to abide by its terms.
+Please report unacceptable behavior to opensource@scrapinghub.com.
+
+Companies using Scrapy
+See https://scrapy.org/companies/
+
+Commercial Support
+See https://scrapy.org/support/
+
+",Python
+"
+has-attribute-selector 
+Check if a selector string has an attribute selector.
+Installation
+npm install --save has-attribute-selector
+Usage
+var hasAttributeSelector = require('has-attribute-selector')
+
+hasAttributeSelector('[hidden]')  // => true
+hasAttributeSelector('.hidden')  // => false
+License
+MIT
+Contributing
+
+Fork it
+Create your feature branch (git checkout -b my-new-feature)
+Commit your changes (git commit -am 'Add some feature')
+Push to the branch (git push origin my-new-feature)
+Create new Pull Request
+
+Crafted with <3 by John Otander (@4lpine).
+
+
+This package was initially generated with yeoman and the p generator.
+
+
+",JavaScript
+"
+DragonCraft 5e
+A Dungeons and Dragons character creation tool. Allows you to create a character using information from the Official Player's Handbook, as well as your own custom data.
+Installation
+Run npm install  and bower install to install dependencies. Run grunt serve for a live-reload preview and grunt build to create a build.
+Testing
+Running grunt test will run the unit tests with karma.
+
+",JavaScript
